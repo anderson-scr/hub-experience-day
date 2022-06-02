@@ -21,7 +21,7 @@
   bottom: -3px;
   width: 0px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--orange);
   left: 0;
   right: 0;
   margin: auto;
@@ -36,4 +36,7 @@
 #header > nav {
   display: flex;
   gap: 50px;
+}
+#some {
+  visibility: hidden;
 }

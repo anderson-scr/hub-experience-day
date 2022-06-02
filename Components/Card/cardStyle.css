@@ -22,7 +22,7 @@
 
   position: relative;
   transform-style: preserve-3d;
-  transition: .6s .1s;
+  transition: .6s .1s;  
 }
 
 /* hover and focus-within states */
@@ -49,12 +49,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 4px 15px 3px rgba(0, 0, 0, 0.25);
+
 }
 
 /* .card-front */
 .card-front {
   transform: rotateY(0deg);
   z-index: 2;
+  position: relative;
+}
+#foto {
+  position: absolute;
+  z-index: 0;
+}
+#figure2 {
+  z-index: 1;
 }
 
 /* .card-back */
@@ -87,13 +97,15 @@
 
 /* figcaption */
 #titulo_palestra{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 5px;
   color: white;
+  z-index: 1;
 }
 
 .card-front h1 {
   font-size: 20px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 .card-front h2{
   font-size: 24px;
@@ -104,6 +116,7 @@
   position: absolute;
   top: 0;
   color: var(--white-1);
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .card-front h3 {
@@ -112,8 +125,11 @@
   left: 15px;
   color: var(--white-1);
   font-size: 14px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
-
+#legendaDataHora {
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
 #containnerDataHora {
   display: flex;
   justify-content: flex-start;

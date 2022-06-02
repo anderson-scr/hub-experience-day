@@ -19,24 +19,32 @@
   top: 0;
   bottom: 150px;
   margin: auto 0;
+  height: 120px;
   right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.setinhaContainner:hover > .linhaCima {
+  border-color: var(--ligth-orange);
+  cursor: pointer;
 }
 
 .linhaCima{
   height: 80px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue);
   border-radius: 2px;
   background-color: var(--white);
   margin-bottom: 5px;
   display: block;
+  transition: border-color .2s linear;
 }
 #setinha{
   color: var(--white);
   animation: scrolldown 3s linear infinite .5s;
+  cursor: pointer;
 }
 
 @keyframes scrolldown {
@@ -84,6 +92,7 @@
   left: 250px;
 }
 #X {
+  transform: scale(.8);
   left: 0;
   right: 40%;
   margin: auto;
@@ -106,4 +115,14 @@
   color: var(--main-bg-color);
   font-size: 48px;
   margin-top: 5%;
+}
+#containnerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 400px;
+}
+#sessaoDosCard > p {
+  border: 2px solid red;
 }

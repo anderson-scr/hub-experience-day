@@ -11,32 +11,30 @@
   transition: all .5s linear;
   animation: float 5s infinite;
 }
+
 .containnerCubo:hover {
   width: 570px;
   height: 570px;
 }
-.linha {
-  width: 100%;
-  height: 20%;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  transform-style: preserve-3d;
 
-}
 .box {
   height: 100px;
   width: 100px;
   transform-style: preserve-3d;
   position: absolute;
-  transition: all .3 linear;
+  transition: all 1.2s linear;
 }
+
 .box:hover {
-  transform: scale3d(1, 1, 2.7);
+  transform: rotateX(360deg) scale(1.1);
 }
 .box:hover > .card {
-  border: 2px solid #fff;
+  background-color: var(--orange) !important;
 }
+.box:hover > #left, .box:hover > #bottom, .box:hover > #top {
+  background-color: hwb(33 12% 10%) !important;
+}
+
 .esconde {
   visibility: hidden;
 }
@@ -47,7 +45,6 @@
   width: inherit;
   text-align: center;
   background-color: var(--white);
-  border-color: var(--background-blue);
   border-width: 2px;
   position: absolute;
   transition: all .3s linear;
@@ -58,6 +55,7 @@
 #bottom {
   background-color: #bbbbbb;
 }
+
 
 @keyframes float {
   0% {
@@ -106,7 +104,6 @@
 .l1c1 {
   top: 0;
   left: 0;
-  transition: all .1s linear;
 }
 /* .l1c1:hover{
   transform: scale(1.03);

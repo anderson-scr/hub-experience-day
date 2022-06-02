@@ -27,13 +27,4 @@ const fetchHeader = new Promise((resolve) => {
     document.querySelector("#campoDo3D").innerHTML = data
     resolve()
   })
-
-  fetch("../Components/Card/card.html")
-  .then( response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("#containnerCards").innerHTML = data
-    resolve()
-  })
 })
