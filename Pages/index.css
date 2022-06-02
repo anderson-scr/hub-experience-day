@@ -14,8 +14,6 @@
 
 
 
-
-
 .setinhaContainner{
   position: absolute;
   top: 0;
@@ -48,4 +46,50 @@
   50%{
       transform: translateY(0%);
   }
+}
+
+#texto {
+  display: flex;
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  justify-content: space-evenly;
+  border-bottom: 3px solid var(--main-bg-color);
+}
+#containnerTexto {
+  width: 40%;
+}
+#containnerTexto > h2 {
+  color: var(--main-bg-color);
+  font-size: 34px;
+  margin-bottom: 50px;
+  margin-top: 13%;
+}
+#containnerTexto > p {
+  text-align: justify;
+  font-size: 20px;
+}
+#containnerLetrasSVG {
+  width: 30%;
+  height: inherit;
+  position: relative;
+}
+.letraSVG {
+  position: absolute;
+}
+#H {
+  top: 10px;
+  left: 0;
+}
+#X {
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+}
+#D {
+  bottom: 30px;
+  right: 22px;
 }
