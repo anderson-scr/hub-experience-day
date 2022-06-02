@@ -1,0 +1,239 @@
+.containnerCubo {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .5s linear;
+  animation: float 5s infinite;
+}
+.containnerCubo:hover {
+  width: 570px;
+  height: 570px;
+}
+.linha {
+  width: 100%;
+  height: 20%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  transform-style: preserve-3d;
+
+}
+.box {
+  height: 100px;
+  width: 100px;
+  transform-style: preserve-3d;
+  position: absolute;
+  transition: all .3 linear;
+}
+.box:hover {
+  transform: scale3d(1, 1, 2.7);
+}
+.box:hover > .card {
+  border: 2px solid #fff;
+}
+.esconde {
+  visibility: hidden;
+}
+
+
+.card {
+  height: inherit;
+  width: inherit;
+  text-align: center;
+  background-color: var(--white);
+  border-color: var(--background-blue);
+  border-width: 2px;
+  position: absolute;
+  transition: all .3s linear;
+}
+#left {
+  background-color: #bbbbbb;
+}
+#bottom {
+  background-color: #bbbbbb;
+}
+
+@keyframes float {
+  0% {
+    transform: 
+      translateY(0px)
+      rotateX(0deg)
+      rotateY(0deg);
+  }
+  40% {
+    transform: 
+      translateY(-30px) 
+      rotateX(10deg)
+      rotateY(15deg);
+  }
+}
+
+
+/* Formar o cubo */
+#front {
+  transform: translateZ(50px);
+}
+#back {
+  transform: translateZ(-50px);
+}
+#left {
+  right: 50px;
+  transform: rotateY(-90deg);
+}
+#right {
+  left: 50px;
+  transform: rotateY(90deg);
+}
+#top {
+  bottom: 50px;
+  transform: rotateX(90deg);
+}
+#bottom {
+  top: 50px;
+  transform: rotateX(-90deg);
+}
+
+
+
+
+/* Posicionamento das boxs */
+.l1c1 {
+  top: 0;
+  left: 0;
+  transition: all .1s linear;
+}
+/* .l1c1:hover{
+  transform: scale(1.03);
+}
+.l1c1:hover > .card {
+  border: 2px solid #fff;
+}
+.l1c1:hover >  .mais90 {
+  left: 55px;
+}
+.l1c1:hover > .menos90 {
+  transform: translateY(2px);
+}
+.l1c1:hover > .menos50 {
+  margin: 5px;
+}
+.l1c1:hover > .mais50 {
+  margin: 5px;
+} */
+
+.l1c2 {
+  top: 0;
+  left: 20%;
+}
+.l1c3 {
+  top: 0;
+  left: 40%;
+}
+.l1c4 {
+  top: 0;
+  left: 60%;
+}
+.l1c5 {
+  top: 0;
+  left: 80%;
+}
+
+
+
+.l2c1 {
+  top: 20%;
+  left: 0;
+}
+.l2c2 {
+  top: 20%;
+  left: 20%;
+}
+.l2c3 {
+  top: 20%;
+  left: 40%;
+}
+.l2c4 {
+  top: 20%;
+  left: 60%;
+}
+.l2c5 {
+  top: 20%;
+  left: 80%;
+}
+
+
+
+
+.l3c1 {
+  top: 40%;
+  left: 0;
+}
+.l3c2 {
+  top: 40%;
+  left: 20%;
+}
+.l3c3 {
+  top: 40%;
+  left: 40%;
+}
+.l3c4 {
+  top: 40%;
+  left: 60%;
+}
+.l3c5 {
+  top: 40%;
+  left: 80%;
+}
+
+
+
+
+.l4c1 {
+  top: 60%;
+  left: 0;
+}
+.l4c2 {
+  top: 60%;
+  left: 20%;
+}
+.l4c3 {
+  top: 60%;
+  left: 40%;
+}
+.l4c4 {
+  top: 60%;
+  left: 60%;
+}
+.l4c5 {
+  top: 60%;
+  left: 80%;
+}
+
+
+
+.l5c1 {
+  top: 80%;
+  left: 0;
+}
+.l5c2 {
+  top: 80%;
+  left: 20%;
+}
+.l5c3 {
+  top: 80%;
+  left: 40%;
+}
+.l5c4 {
+  top: 80%;
+  left: 60%;
+}
+.l5c5 {
+  top: 80%;
+  left: 80%;
+}

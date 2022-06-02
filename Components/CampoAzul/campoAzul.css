@@ -1,0 +1,77 @@
+#campoAzul {
+  background-color: var(--main-bg-color);
+  height: 85vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 9%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  margin-right: 6.4%;
+}
+
+.textImpact{
+  width: 50rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.textImpact h2{
+  color: var(--white);
+  font-family: var(--textFont);
+  font-weight: 300;
+  font-size: 40px;
+  display: inline;
+}
+
+#textBlue{
+  color: var(--blue);
+}
+
+.textDatePlace{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  color: var(--white);
+  font-family: var(--textFont);
+}
+
+.textDatePlace h3{
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.textDisplayRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textDisplayRow h4{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.textDisplayRow h5{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.textDatePlace h6{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#campoDo3D {
+  height: 70%;
+  width: 40%;
+  position: relative;
+  margin-top: 3%;
+  margin-right: 8%;
+}

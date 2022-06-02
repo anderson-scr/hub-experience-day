@@ -1,0 +1,19 @@
+* {
+  font-family: 'Fira Code',  monospace;;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-bg-color: #0C4D85;
+  --background-blue: #0C4D85;
+  --white: #FCFCFC;
+  --blue: #42A7FF;
+  --hover_botao_enviar: hsl(207, 90%, 40%);
+}

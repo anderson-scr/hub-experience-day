@@ -1,0 +1,51 @@
+#seguraWave {
+  background-color: red;
+  width: inherit;
+  position: relative;
+}
+#seguraWave {
+  position: relative;
+}
+#waves {
+  position: absolute;
+  top: -140px;
+  width: 100%;
+}
+
+
+
+
+
+.setinhaContainner{
+  position: absolute;
+  top: 0;
+  bottom: 150px;
+  margin: auto 0;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linhaCima{
+  height: 80px;
+  border: 1px solid var(--white);
+  border-radius: 2px;
+  background-color: var(--white);
+  margin-bottom: 5px;
+  display: block;
+}
+#setinha{
+  color: var(--white);
+  animation: scrolldown 3s linear infinite .5s;
+}
+
+@keyframes scrolldown {
+  0%, 100%{
+      transform: translateY(20%);
+  }
+  50%{
+      transform: translateY(0%);
+  }
+}
