@@ -10,7 +10,6 @@
 .text{
   display: flex;
   flex-direction: column;
-  margin-right: 6.4%;
 }
 
 .textImpact{
@@ -74,4 +73,10 @@
   position: relative;
   margin-top: 3%;
   margin-right: 8%;
+}
+
+@media screen and (max-width: 1400px){
+  .text {
+    transform: scale(.75);
+  }
 }

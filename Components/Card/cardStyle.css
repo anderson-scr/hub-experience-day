@@ -1,5 +1,6 @@
 #containnerCards {
   margin-top: 4%;
+  width: 95%;
 }
 
 .flip-card-container {
@@ -299,4 +300,9 @@
 #nome_palestrante_pttras span{
   color: var(--grey);
   font-size: 20;
+}
+@media (max-width: 1400px) {
+  .flip-card-container {
+    transform: scale(.85);
+  }
 }

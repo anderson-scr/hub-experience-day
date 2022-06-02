@@ -25,6 +25,7 @@
   transition: all 1.2s linear;
 }
 
+
 .box:hover {
   transform: rotateX(360deg) scale(1.1);
 }
@@ -233,4 +234,31 @@
 .l5c5 {
   top: 80%;
   left: 80%;
+}
+
+@media screen and (max-width: 1400px){
+	/* [-> 600px] */
+  .containnerCubo {
+    transform: scale3d(.7, .7, .7);
+  }
+
+  @keyframes float {
+    0% {
+      transform:
+        scale3d(.7, .7, .7)
+        translateY(0px)
+        rotateX(0deg)
+        rotateY(0deg);
+    }
+    40% {
+      transform: 
+        scale3d(.7, .7, .7)
+        translateY(-30px) 
+        rotateX(15deg)
+        rotateY(22deg);
+    } 
+  }
+  .box:hover {
+    transform: rotateX(360deg) scale(.9);
+  }
 }
