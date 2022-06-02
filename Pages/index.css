@@ -77,19 +77,21 @@
 }
 .letraSVG {
   position: absolute;
+  transition: left 1s linear, opacity 1s linear;
 }
 #H {
   top: 10px;
-  left: 0;
+  left: 250px;
 }
 #X {
   left: 0;
-  right: 0;
+  right: 40%;
   margin: auto;
   bottom: 0;
   top: 0;
+  opacity: 0;
 }
 #D {
   bottom: 30px;
-  right: 22px;
+  right: -250px;
 }
