@@ -1,5 +1,5 @@
 * {
-  font-family: 'Fira Code',  monospace;;
+  font-family: 'Fira Code',  monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -16,4 +17,6 @@ body {
   --white: #FCFCFC;
   --blue: #42A7FF;
   --hover_botao_enviar: hsl(207, 90%, 40%);
+  --orange: #f7941e;
+  --ligth-orange: #f7a94a;
 }
