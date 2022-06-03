@@ -338,4 +338,7 @@
 #cComercial {
   color: var(--blue);
 }
+.bi {
+  color: var(--main-bg-color);
+}
 /* Footer da pagina */
