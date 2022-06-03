@@ -1,5 +1,4 @@
 #seguraWave {
-  background-color: red;
   width: inherit;
   position: relative;
 }
@@ -14,31 +13,37 @@
 
 
 
-
-
 .setinhaContainner{
   position: absolute;
   top: 0;
   bottom: 150px;
   margin: auto 0;
+  height: 120px;
   right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.setinhaContainner:hover > .linhaCima {
+  border-color: var(--ligth-orange);
+  cursor: pointer;
 }
 
 .linhaCima{
   height: 80px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue);
   border-radius: 2px;
   background-color: var(--white);
   margin-bottom: 5px;
   display: block;
+  transition: border-color .2s linear;
 }
 #setinha{
   color: var(--white);
   animation: scrolldown 3s linear infinite .5s;
+  cursor: pointer;
 }
 
 @keyframes scrolldown {
@@ -49,3 +54,294 @@
       transform: translateY(0%);
   }
 }
+
+
+
+/* Regiao do texto logo depois do principal */
+#textoLP {
+  display: flex;
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  margin-top: 7%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#containnerTexto {
+  width: 55%;
+  padding-bottom: 3%;
+  /* Rato */
+}
+
+#containnerTexto > h2 {
+  color: var(--main-bg-color);
+  font-size: 34px;
+  margin-bottom: 2%;
+}
+#containnerTexto > p {
+  text-align: justify;
+  font-size: 20px;
+}
+#containnerLetrasSVG {
+  width: 30%;
+  max-height: 80%;
+  height: inherit;
+  position: relative;
+}
+.letraSVG {
+  position: absolute;
+  transition: left 1s linear, opacity 1s linear;
+}
+#H {
+  top: 10px;
+  left: 250px;
+}
+#X {
+  transform: scale(.8);
+  left: 0;
+  right: 40%;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+}
+#D {
+  bottom: 30px;
+  right: -250px;
+}
+
+
+
+/* Titulo da sessao do card (BAIXO) */
+#sessaoDosCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#estiloTitulo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+#estiloTitulo > h2 {
+  color: var(--main-bg-color);
+  font-size: 48px;
+  flex-grow: 2;
+}
+#estiloTitulo > div {
+  width: 30%;
+  height: 4px;
+  background-color: var(--main-bg-color);
+  flex-grow: 1;
+}
+.subTitulo {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.textoAzul {
+  font-weight: 800;
+  color: var(--ligth-orange);
+  font-size: 2.5rem;
+  margin-top: 8px;
+}
+/* Titulo da sessao do card (CIMA) */
+
+
+
+/* Campos que aparecem os cards (BAIXO) */
+.secDeAndar {
+  margin-top: 10%;
+}
+.tituloAndar {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.secDeAndar:hover > .tituloAndar > div {
+  background-color: var(--blue);
+}
+.containnerDeCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+/* Campos que aparecem os cards (CIMA) */
+
+
+
+
+/* Parte responsavel pela responsividade do SITE */
+@media (max-width: 1400px){
+  #containnerTexto > p {
+    font-size: 18px;
+  }
+  #containnerTexto > h2 {
+    font-size: 26px;
+    margin-top: 0;
+  }
+
+  #containnerLetrasSVG {
+    transform: scale(.8);
+  }
+  #H, #X, #D {
+    transform: scale(.7);
+  }
+}
+/* Parte responsavel pela responsividade do SITE */
+
+
+
+/* Parte dos patrocinadores */
+#organizacao {
+  margin: auto;
+  margin-top: 8%;
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  transition: border-color .4s linear;
+}
+#organizacao:hover {
+  border-color: var(--ligth-orange);
+}
+#organizacao:hover > #seguraTitulo > div {
+  background-color: var(--ligth-orange);
+}
+#organizacao > #seguraTitulo > h2 {
+  color: var(--main-bg-color);
+  font-size: 3rem;
+  margin: 1%;
+  flex-grow: 1;
+}
+#seguraTitulo {
+  display: flex;
+  align-items: center;
+}
+#seguraTitulo > div {
+  height: 2px;
+  flex-grow: 3;
+  background-color: #f1f1f1;
+  transition: background-color .4s linear;
+}
+#seguraIMG {
+  display: flex;
+  margin: 2%;
+  justify-content: space-around;
+  align-items: center;
+}
+#seguraIMG > img {
+  width: 190px;
+}
+/* Parte dos patrocinadores */
+
+
+/* Sessao dos Apoiadores (BAIXO) */
+#apoiadores {
+  width: 90%;
+  margin: auto;
+}
+#apoiadores {
+  margin: auto;
+  margin-top: 8%;
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  transition: border-color .4s linear;
+}
+#apoiadores:hover {
+  border-color: var(--ligth-orange);
+}
+#apoiadores:hover > #seguraTitulo > div {
+  background-color: var(--ligth-orange);
+}
+#apoiadores > #seguraTitulo > h2 {
+  color: var(--main-bg-color);
+  font-size: 3rem;
+  margin: 1%;
+  flex-grow: 1;
+}
+#seguraApoiadores > img {
+  width: 150px;
+}
+#seguraApoiadores {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* Esfera */
+.linhaEsfera {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.apoiador {
+  width: 115px;
+  height: 115px;
+  border: 3px solid var(--main-bg-color);
+  border-radius: 50%;
+  transition: transform .3s linear;
+}
+.apoiador:hover {
+  transform: scale(1.2);
+  border-color: var(--ligth-orange);
+}
+
+.wMini {
+  width: 52%;
+}
+.wMenor {
+  width: 62%;
+}
+.wMedia {
+  width: 73%;
+}
+.wGrande {
+  width: 83%;
+}
+/* Esfera */
+/* Sessao dos Apoiadores (CIMA) */
+
+
+/* Footer da pagina */
+#footer {
+  margin: 2%;
+  text-align: center;
+}
+#footer > legend {
+  margin-bottom: 10px;
+}
+.seguraCampos {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.seguraCampos > .camposFooter > img {
+  width: 80px;
+}
+.camposFooter > legend {
+  font-weight: 600;
+}
+.legendaFooter {
+  font-size: 14px;
+}
+.nomesDevs {
+  font-weight: 800;
+  color: var(--ligth-orange);
+}
+.nomesDevs a{
+  color: transparent;
+}
+#cComercial {
+  color: var(--blue);
+}
+.bi {
+  color: var(--main-bg-color);
+}
+/* Footer da pagina */
