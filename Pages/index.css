@@ -162,15 +162,6 @@
   margin-bottom: 1rem;
   align-items: center;
 }
-.tituloAndar > h2 {
-  color: var(--blue);
-}
-.tituloAndar > div {
-  height: 3px;
-  flex-grow: 3;
-  background-color: #ebebeb;
-  transition: background-color .5s linear;
-}
 .secDeAndar:hover > .tituloAndar > div {
   background-color: var(--blue);
 }
@@ -203,3 +194,148 @@
   }
 }
 /* Parte responsavel pela responsividade do SITE */
+
+
+
+/* Parte dos patrocinadores */
+#organizacao {
+  margin: auto;
+  margin-top: 8%;
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  transition: border-color .4s linear;
+}
+#organizacao:hover {
+  border-color: var(--ligth-orange);
+}
+#organizacao:hover > #seguraTitulo > div {
+  background-color: var(--ligth-orange);
+}
+#organizacao > #seguraTitulo > h2 {
+  color: var(--main-bg-color);
+  font-size: 3rem;
+  margin: 1%;
+  flex-grow: 1;
+}
+#seguraTitulo {
+  display: flex;
+  align-items: center;
+}
+#seguraTitulo > div {
+  height: 2px;
+  flex-grow: 3;
+  background-color: #f1f1f1;
+  transition: background-color .4s linear;
+}
+#seguraIMG {
+  display: flex;
+  margin: 2%;
+  justify-content: space-around;
+  align-items: center;
+}
+#seguraIMG > img {
+  width: 150px;
+}
+/* Parte dos patrocinadores */
+
+
+/* Sessao dos Apoiadores (BAIXO) */
+#apoiadores {
+  width: 90%;
+  margin: auto;
+}
+#apoiadores {
+  margin: auto;
+  margin-top: 8%;
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+  transition: border-color .4s linear;
+}
+#apoiadores:hover {
+  border-color: var(--ligth-orange);
+}
+#apoiadores:hover > #seguraTitulo > div {
+  background-color: var(--ligth-orange);
+}
+#apoiadores > #seguraTitulo > h2 {
+  color: var(--main-bg-color);
+  font-size: 3rem;
+  margin: 1%;
+  flex-grow: 1;
+}
+#seguraApoiadores > img {
+  width: 150px;
+}
+#seguraApoiadores {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* Esfera */
+.linhaEsfera {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.apoiador {
+  width: 115px;
+  height: 115px;
+  border: 3px solid var(--main-bg-color);
+  border-radius: 50%;
+  transition: transform .3s linear;
+}
+.apoiador:hover {
+  transform: scale(1.2);
+  border-color: var(--ligth-orange);
+}
+
+.wMini {
+  width: 52%;
+}
+.wMenor {
+  width: 62%;
+}
+.wMedia {
+  width: 73%;
+}
+.wGrande {
+  width: 83%;
+}
+/* Esfera */
+/* Sessao dos Apoiadores (CIMA) */
+
+
+/* Footer da pagina */
+#footer {
+  margin: 2%;
+  text-align: center;
+}
+#footer > legend {
+  margin-bottom: 10px;
+}
+.seguraCampos {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.seguraCampos > .camposFooter > img {
+  width: 80px;
+}
+.camposFooter > legend {
+  font-weight: 600;
+}
+.legendaFooter {
+  font-size: 14px;
+}
+.nomesDevs {
+  font-weight: 800;
+  color: var(--ligth-orange);
+}
+#cComercial {
+  color: var(--blue);
+}
+/* Footer da pagina */
