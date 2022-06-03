@@ -1,0 +1,308 @@
+#containnerCards {
+  margin-top: 4%;
+  width: 95%;
+}
+
+.flip-card-container {
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 80%);
+  --dark: hsl(var(--hue), 25%, 10%);
+  --grey: #42A7FF;
+
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+/* .flip-card */
+.flip-card {
+  width: inherit;
+  height: inherit;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;  
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 4px 15px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+  position: relative;
+}
+#foto {
+  position: absolute;
+  z-index: 0;
+}
+#figure2 {
+  z-index: 1;
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* figure */
+.flip-card-container figure {
+  z-index: -1;
+}
+
+/* figure, .img-bg */
+.flip-card-container figure,
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* img */
+.flip-card-container img {
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* figcaption */
+#titulo_palestra{
+  margin-top: 10px;
+  margin-left: 5px;
+  color: white;
+  z-index: 1;
+}
+
+.card-front h1 {
+  font-size: 20px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.card-front h2{
+  font-size: 24px;
+  margin-top: 300px;  
+  margin-left: 12px;
+  width: 90%;
+  border-bottom: 2px solid white ;
+  position: absolute;
+  top: 0;
+  color: var(--white-1);
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.card-front h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  color: var(--white-1);
+  font-size: 14px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+#legendaDataHora {
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+#containnerDataHora {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.card-back .img-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+}
+
+/* button */
+#inscricao {
+  margin-top: 280px;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--white-1);
+  letter-spacing: 2px;
+  padding: 9px 20px;
+  border: 1px solid var(--grey);
+  border-radius: 1000px;
+  background: transparent;
+  transition: .3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#inscricao:hover,
+#inscricao:focus {
+  color: var(--primary);
+  background: hsla(var(--hue), 25%, 10%, .2);
+  border-color: currentColor;
+}
+
+.flip-card-container a:active {
+  transform: translate(2px);
+}
+
+/* .design-container */
+.design-container {
+  --tr: 90;
+  --op: .5;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+/* .design */
+.design {
+  display: block;
+
+  background: var(--grey);
+  position: absolute;
+
+  opacity: var(--op);
+  transition: .3s;
+}
+
+.design--5,
+.design--6,
+.design--7,
+.design--8 {
+  width: 100%;
+  height: 1px;
+}
+
+.design--5,
+.design--6 {
+  left: 0;
+  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.design--5 {
+  top: 91%;
+}
+
+.design--6 {
+  top: 79%;
+}
+
+.design--7,
+.design--8 {
+  right: 0;
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design--7 {
+  top: 76%;
+}
+
+.design--8 {
+  top: 94%;
+}
+
+/* states */
+#inscricao:hover+.design-container,
+#inscricao:active+.design-container,
+#inscricao:focus+.design-container {
+  --tr: 20;
+  --op: .3;
+}
+
+.flip-card-container h1{
+  font-weight: bold;
+  font-size: 16;
+  border-bottom: 2px solid white;
+  /* padding: 20px; */
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+}
+
+.flip-card-container h2 #cargo_palestrante{
+  color: var(--white-1);
+  font-size: 18px;
+}
+
+#descricaoPalestra{
+  color: white;
+  text-align: center;
+}
+.card-back h2 {
+  color: var(--white-1);
+  text-align: center;
+  margin-top: 20px;
+}
+#redes_sociais{
+  margin-top: 5px;
+  margin-left: 40%;
+}
+
+.flip-card-container i{
+  color: var(--grey);
+}
+
+#redes_sociais i{
+  padding: 5px;
+}
+
+#sala_palestra{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+#sala{
+  color: var(--grey);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#nome_palestrante_pttras{
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#nome_palestrante_pttras span{
+  color: var(--grey);
+  font-size: 20;
+}
+@media (max-width: 1400px) {
+  .flip-card-container {
+    transform: scale(.85);
+  }
+}

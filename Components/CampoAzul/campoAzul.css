@@ -10,7 +10,8 @@
 .text{
   display: flex;
   flex-direction: column;
-  margin-right: 6.4%;
+  padding-right: 7.5%; 
+  /* Rato */
 }
 
 .textImpact{
@@ -31,7 +32,7 @@
 }
 
 #textBlue{
-  color: var(--blue);
+  color: var(--orange);
 }
 
 .textDatePlace{
@@ -74,4 +75,19 @@
   position: relative;
   margin-top: 3%;
   margin-right: 8%;
+}
+
+
+
+
+@media (max-width: 1400px){
+  #campoAzul {
+    height: 73vh;
+  }
+  .text {
+    padding-right: .5%;
+  }
+  .text {
+    transform: scale(.75);
+  }
 }

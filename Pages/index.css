@@ -236,7 +236,6 @@
 }
 #seguraIMG > img {
   width: 190px;
-}
 /* Parte dos patrocinadores */
 
 
@@ -335,9 +334,11 @@
   font-weight: 800;
   color: var(--ligth-orange);
 }
+
 .nomesDevs a{
   color: transparent;
 }
+
 #cComercial {
   color: var(--blue);
 }
