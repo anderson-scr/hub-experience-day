@@ -3,9 +3,16 @@ fetch("../Components/Card/card.html")
   return response.text()
 })
 .then(data => {
-  const containnerCards = document.querySelector("#containnerCards")
+  const terreo = document.querySelector("#terreo")
+  const primeiroAndar = document.querySelector("#primeiroAndar")
+  const segundoAndar = document.querySelector("#segundoAdar")
+  const terceiroAndar = document.querySelector("#terceiroAndar")
 
-  for(let i =0; i < 10; i++) {
-    containnerCards.innerHTML += data
+
+  for(let i =0; i < 5; i++) {
+    terreo.innerHTML += data
+    primeiroAndar.innerHTML += data
+    segundoAndar.innerHTML += data
+    terceiroAndar.innerHTML += data
   }
 })

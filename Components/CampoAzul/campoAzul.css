@@ -10,6 +10,8 @@
 .text{
   display: flex;
   flex-direction: column;
+  padding-right: 7.5%; 
+  /* Rato */
 }
 
 .textImpact{
@@ -75,7 +77,16 @@
   margin-right: 8%;
 }
 
-@media screen and (max-width: 1400px){
+
+
+
+@media (max-width: 1400px){
+  #campoAzul {
+    height: 73vh;
+  }
+  .text {
+    padding-right: .5%;
+  }
   .text {
     transform: scale(.75);
   }
