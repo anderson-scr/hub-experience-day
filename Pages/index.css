@@ -56,8 +56,7 @@
 }
 
 
-
-/* Regiao do texto logo depois do principal */
+/* Parte da descricao e HXD animacao (BAIXO) */
 #textoLP {
   display: flex;
   height: 600px;
@@ -91,6 +90,7 @@
 .letraSVG {
   position: absolute;
   transition: left 1s linear, opacity 1s linear;
+  opacity: 0;
 }
 #H {
   top: 10px;
@@ -103,13 +103,12 @@
   margin: auto;
   bottom: 0;
   top: 0;
-  opacity: 0;
 }
 #D {
   bottom: 30px;
   right: -250px;
 }
-
+/* Parte da descricao e HXD animacao (CIMA) */
 
 
 /* Titulo da sessao do card (BAIXO) */
@@ -197,7 +196,7 @@
 
 
 
-/* Parte dos patrocinadores */
+/* Parte dos patrocinadores (BAIXO)*/
 #organizacao {
   margin: auto;
   margin-top: 8%;
@@ -236,8 +235,10 @@
 }
 #seguraIMG > img {
   width: 190px;
-/* Parte dos patrocinadores */
 }
+/* Parte dos patrocinadores (CIMA)*/
+
+
 
 /* Sessao dos Apoiadores (BAIXO) */
 #apoiadores {
@@ -271,6 +272,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 /* Esfera */
 .linhaEsfera {
   display: flex;
