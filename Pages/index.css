@@ -13,6 +13,7 @@
 
 
 
+/* Setinha da direita para scroll */
 .setinhaContainner{
   position: absolute;
   top: 0;
@@ -54,6 +55,9 @@
       transform: translateY(0%);
   }
 }
+/* Setinha da direita para scroll */
+
+
 
 
 /* Parte da descricao e HXD animacao (BAIXO) */
@@ -111,6 +115,8 @@
 /* Parte da descricao e HXD animacao (CIMA) */
 
 
+
+
 /* Titulo da sessao do card (BAIXO) */
 #sessaoDosCards {
   display: flex;
@@ -148,6 +154,7 @@
   margin-top: 8px;
 }
 /* Titulo da sessao do card (CIMA) */
+
 
 
 
@@ -196,6 +203,7 @@
 
 
 
+
 /* Parte dos patrocinadores (BAIXO)*/
 #organizacao {
   margin: auto;
@@ -237,6 +245,7 @@
   width: 190px;
 }
 /* Parte dos patrocinadores (CIMA)*/
+
 
 
 
@@ -293,7 +302,7 @@
 }
 
 .wMini {
-  width: 52%;
+  width: 42%;
 }
 .wMenor {
   width: 62%;

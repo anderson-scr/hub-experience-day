@@ -1,18 +1,25 @@
 #header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: fixed;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 8%;
   padding-right: 8%;
-  background-color: var(--main-bg-color);
-  height: 60px;
-}
+  width: 100%;
+  z-index: 10;
+  height: 4%;
 
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border-bottom : 1px solid rgba(255, 255, 255, 0.07);
+}
 #header button {
   background-color: transparent;
   border: none;
-  color: var(--white);
+  color: var(--orange);
   font-size: 1.1rem;
   position: relative;
 }
@@ -22,7 +29,7 @@
   bottom: -3px;
   width: 0px;
   height: 2px;
-  background-color: var(--orange);
+  background-color: var(--main-bg-color);
   left: 0;
   right: 0;
   margin: auto;
@@ -37,33 +44,35 @@
 #header .navigationBar {
   display: flex;
   gap: 50px;
-  width: 95vw;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-
 .menu{
   width: 400px;
   display: flex;
   justify-content: space-between;
 }
-
-#some {
-  visibility: hidden;
-}
-
-#toggler, label{
+.iconeMenu {
   display: none;
+  color: var(--orange);
+}
+/* Menu (CIMA) */
+
+
+
+
+/* Menu responsivo (BAIXO) */
+.iconeMenu{
+  width: 30px;
+  height: 30px;
 }
 
-@media screen and (max-width: 940px){
-  #header{
-    padding: 8px 8px;
+@media (max-width: 940px){
+  .iconeMenu {
+    display: flex;
   }
 
   .menu{
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
+    display: none;
   }
 
   #header > nav{
@@ -92,3 +101,4 @@
     max-height: 100%;
   }
 }
+/* Menu responsivo */
