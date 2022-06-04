@@ -34,7 +34,7 @@
 #header button:hover::after {
   width: 100%;
 }
-#header > nav {
+#header .navigationBar {
   display: flex;
   gap: 50px;
   width: 95vw;
