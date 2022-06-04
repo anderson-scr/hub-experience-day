@@ -346,3 +346,169 @@
   color: var(--main-bg-color);
 }
 /* Footer da pagina */
+
+
+
+
+/* Cubinhos que vao surgir e sumir da tela */
+.cubinhosEfeitos {
+  height: 3vh;
+  width: 3vh;
+  background-color: #0c4d8525;
+  position: fixed;
+  opacity: 0;
+  transform: scale(0.1);
+}
+.orange {
+  background-color: #f7951e4d;
+}
+#ce1 {
+  left: 1%;
+  bottom: 45%;
+}
+#ce2 {
+  left: 7%;
+  bottom: 62%;
+}
+#ce3 {
+  left: 15%;
+  bottom: 17%;
+}
+#ce4 {
+  left: 21%;
+  bottom: 33%;
+}
+#ce5 {
+  left: 27%;
+  bottom: 55%;
+}
+#ce6 {
+  left: 32%;
+  bottom: 40%;
+}
+#ce7 {
+  left: 40%;
+  bottom: 60%;
+}
+#ce8 {
+  left: 47%;
+  bottom: 78%;
+}
+#ce9 {
+  right: 1%;
+  bottom: 60%;
+}
+#ce10 {
+  right: 5%;
+  bottom: 15%;
+}
+#ce11 {
+  right: 13%;
+  bottom: 50%;
+}
+#ce12 {
+  right: 19%;
+  bottom: 22%;
+}
+#ce13 {
+  right: 25%;
+  bottom: 67%;
+}
+#ce14 {
+  right: 33%;
+  bottom: 60%;
+}
+#ce15 {
+  right: 40%;
+  bottom: 30%;
+}
+#ce16 {
+  right: 46%;
+  bottom: 55%;
+}
+
+
+.kf1 {
+  animation: floatQuadradinhos 7s ease-in-out infinite;
+  animation-delay: 2s;
+}
+@keyframes floatQuadradinhos {
+  0% {
+    transform: 
+      translateY(0%)
+      translateX(0%)
+      scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: 
+      translateY(-750%)
+      scale(0.8)
+      translateX(100%);
+
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+
+.kf2 {
+  animation: floatQuadradinhos2 9s ease-in-out infinite;
+}
+@keyframes floatQuadradinhos2 {
+  0% {
+    transform: 
+      translateY(0%)
+      translateX(0%)
+      scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: 
+      translateY(950%)
+      scale(1.1);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+
+.kf3 {
+  animation: floatQuadradinhos3 7.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+@keyframes floatQuadradinhos3 {
+  0% {
+    transform: 
+      translateY(0%)
+      translateX(0%)
+      scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: 
+      translateX(-100%);
+  }
+  50% {
+    transform: 
+      translateY(-750%)
+      scale(0.6)
+      translateX(-50%);
+    opacity: .3; 
+  }
+  80% {
+    opacity: 1;
+  }
+}
+/* Cubinhos que vao surgir e sumir da tela */
