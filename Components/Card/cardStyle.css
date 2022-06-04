@@ -195,7 +195,6 @@
 #sala{
   color: var(--grey);
   text-align: center;
-  margin-top: 5px;
   border-top: 1px solid var(--grey);
   width: 90%;
   margin-top: 20px;
@@ -205,37 +204,42 @@
   margin-top: 40px;
 }
 #containnerSocial   {
-  border: 1px solid white;
-  height: 24px;
-  width: 90%;
+  height: 34px;
   display: flex;
+  gap: 25px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 17px;
+}
+#containnerSocial > img {
+  border-radius: 0px;
+  cursor: pointer;
 }
 /* Parte de tras do card */
 
 
 /* button */
 #inscricao {
-  margin-top: 280px;
-  font-family: inherit;
+  margin-top: 290px;
   font-weight: bold;
   color: var(--white-1);
   letter-spacing: 2px;
-  padding: 9px 20px;
   border: 1px solid var(--grey);
-  border-radius: 1000px;
+  border-radius: 10px;
   background: transparent;
-  transition: .3s;
+  transition-delay: .3s;
   text-decoration: none;
+  width: 70%;
+  text-align: center;
   cursor: pointer;
+  height: 40px;
+  padding-top: 7px;
 }
 
 #inscricao:hover,
 #inscricao:focus {
-  color: var(--primary);
   background: hsla(var(--hue), 25%, 10%, .2);
-  border-color: currentColor;
+  border-color: var(--ligth-orange);
 }
 
 .flip-card-container a:active {
@@ -249,7 +253,6 @@
 
   width: 100%;
   height: 100%;
-
   background: transparent;
   position: absolute;
   top: 0;
