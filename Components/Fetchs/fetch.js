@@ -36,6 +36,6 @@ const fetchHeader = new Promise((resolve) => {
 function menuScroll() {
   const botoes = document.querySelectorAll(".btnNav")
   window.addEventListener("scroll", () => {
-    window.scrollY > 700? botoes.forEach(botao => botao.style.color = "var(--main-bg-color)") : botoes.forEach(botao => botao.style.color = "#fff")
+    window.scrollY > 600? botoes.forEach(botao => botao.style.color = "var(--blue)") : botoes.forEach(botao => botao.style.color = "#fff")
   })
 }

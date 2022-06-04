@@ -1,6 +1,6 @@
 #campoAzul {
   background-color: var(--main-bg-color);
-  height: 96vh;
+  min-height: 96vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
