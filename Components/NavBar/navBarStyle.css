@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 940px){
   #header{
-    padding: 16px 16px;
+    padding: 8px 8px;
   }
 
   .menu{
@@ -66,11 +66,9 @@
     overflow: hidden;
   }
 
-  .navigationBar{
+  #header > nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+    justify-content: space-around;
   }
 
   #header button{
@@ -93,3 +91,4 @@
     overflow: visible;
     max-height: 100%;
   }
+}

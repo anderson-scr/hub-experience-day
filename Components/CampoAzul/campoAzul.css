@@ -68,9 +68,14 @@
   font-weight: 500;
 }
 
-.textDatePlace h6{
+h6{
   font-size: 20px;
   font-weight: 500;
+}
+
+#gratis{
+  font-size: 16px;
+  color: var(--orange);
 }
 
 #campoDo3D {
@@ -96,4 +101,3 @@
   .text {
     transform: scale(.75);
   }
-}
