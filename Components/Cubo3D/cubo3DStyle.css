@@ -38,6 +38,7 @@
 }
 
 .esconde {
+  visibility: hidden;
   background-color: transparent !important;
   border: none !important;
 }

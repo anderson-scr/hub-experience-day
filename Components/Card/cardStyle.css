@@ -54,7 +54,10 @@
 
 }
 
-/* .card-front */
+
+
+
+/* Parte da frente do card */
 .card-front {
   transform: rotateY(0deg);
   z-index: 2;
@@ -95,7 +98,9 @@
   height: 100%;
   border-radius: 24px;
 }
-
+.flip-card-container i{
+  color: var(--grey);
+}
 /* figcaption */
 #titulo_palestra{
   margin-top: 10px;
@@ -119,16 +124,12 @@
   color: var(--white-1);
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
-
 .card-front h3 {
   position: absolute;
   bottom: 40px;
   left: 15px;
   color: var(--white-1);
   font-size: 14px;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
-}
-#legendaDataHora {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 #containnerDataHora {
@@ -139,10 +140,80 @@
   padding-left: 25px;
   margin-top: 10px;
 }
+.bi-calendar4-week {
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 8px;
+}
+#legendaDataHora {
+  font-size: 18px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/* Parte da frente do card */
 
+
+
+
+
+
+/* Parte de tras do card */
 .card-back .img-bg {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
 }
+.card-back h2 {
+  color: var(--white-1);
+  text-align: center;
+  margin-top: 10px;
+}
+.card-back > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nome_palestrante_pttras{
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+#descricaoPalestra {
+  color: var(--white-1);
+  text-align: center;
+  overflow: hidden;
+  line-height: 25px;
+  width: 90%;
+  height: 150px;
+  margin: 0;
+}
+/* O atributo dos 3 pontos nao quis funcionar, infelizmente. */
+#tresPontos {
+  color: var(--white-1);
+  display: flex;
+  justify-content: center;
+  line-height: 3px;
+}
+#sala{
+  color: var(--grey);
+  text-align: center;
+  margin-top: 5px;
+  border-top: 1px solid var(--grey);
+  width: 90%;
+  margin-top: 20px;
+}
+#sala_palestra{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+#containnerSocial   {
+  border: 1px solid white;
+  height: 24px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Parte de tras do card */
+
 
 /* button */
 #inscricao {
@@ -246,7 +317,6 @@
   font-weight: bold;
   font-size: 16;
   border-bottom: 2px solid white;
-  /* padding: 20px; */
   margin: auto;
   text-align: center;
   align-items: center;
@@ -258,49 +328,7 @@
   font-size: 18px;
 }
 
-#descricaoPalestra{
-  color: white;
-  text-align: center;
-}
-.card-back h2 {
-  color: var(--white-1);
-  text-align: center;
-  margin-top: 20px;
-}
-#redes_sociais{
-  margin-top: 5px;
-  margin-left: 40%;
-}
 
-.flip-card-container i{
-  color: var(--grey);
-}
-
-#redes_sociais i{
-  padding: 5px;
-}
-
-#sala_palestra{
-  margin-left: 60px;
-  margin-top: 40px;
-}
-
-#sala{
-  color: var(--grey);
-  text-align: center;
-  margin-top: 20px;
-}
-
-#nome_palestrante_pttras{
-  padding-top: 20px;
-  font-size: 24px;
-  text-align: center;
-}
-
-#nome_palestrante_pttras span{
-  color: var(--grey);
-  font-size: 20;
-}
 @media (max-width: 1400px) {
   .flip-card-container {
     transform: scale(.85);
