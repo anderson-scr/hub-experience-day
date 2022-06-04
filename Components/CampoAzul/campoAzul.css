@@ -21,6 +21,8 @@
   flex-direction: column;
   justify-content: center;
   margin: 2rem 0 3rem 0;
+  transition: opacity 2s linear;
+  opacity: 0  ;
 }
 
 .textImpact h2{
@@ -41,6 +43,8 @@
   margin-top: 30px;
   color: var(--white);
   font-family: var(--textFont);
+  transition: opacity 2s linear;
+  opacity: 0;
 }
 
 .textDatePlace h3{
@@ -80,6 +84,8 @@ h6{
   position: relative;
   margin-top: 3%;
   margin-right: 8%;
+  opacity: 0;
+  transition: opacity 2s linear;
 }
 
 
