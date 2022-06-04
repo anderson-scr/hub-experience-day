@@ -322,10 +322,11 @@
 /* Sessao dos Apoiadores (CIMA) */
 
 
-/* Footer da pagina */
+/* Footer da pagina (BAIXO) */
 #footer {
-  margin: 2%;
+  margin: 2% 2% 0 2%;
   text-align: center;
+  overflow: hidden;
 }
 #footer > legend {
   margin-bottom: 10px;
@@ -359,12 +360,12 @@
 .bi {
   color: var(--main-bg-color);
 }
-/* Footer da pagina */
+/* Footer da pagina (CIMA) */
 
 
 
 
-/* Cubinhos que vao surgir e sumir da tela */
+/* Cubinhos que vao surgir e sumir da tela (BAIXO) */
 .cubinhosEfeitos {
   height: 3vh;
   width: 3vh;
@@ -526,4 +527,372 @@
     opacity: 1;
   }
 }
-/* Cubinhos que vao surgir e sumir da tela */
+/* Cubinhos que vao surgir e sumir da tela (CIMA) */
+
+
+
+
+
+/* Cubinhos do footer. TETRIS (BAIXO) */
+#seguraTetris {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  height: 1.5vw;
+  position: relative;
+}
+.separaCubinhos {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+  width: 32%;
+  bottom: 0;
+}
+#separacaoMeio {
+  display: flex;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#separacaoEsq {
+  left: 0;
+}
+#separacaoDir {
+  right: 0;
+}
+.cubTetris {
+  background-color: var(--quadradinhos);
+  opacity: 0;
+  pointer-events: none;
+  position: inherit;
+  width: 1.5vw;
+  height: 1.5vw;
+  bottom: 0px;
+  z-index: 0;
+  transform: scale(.1);
+}
+
+
+
+/* Alturas */
+.l2 {
+  bottom: 1.5vw;
+}
+.l3 {
+  bottom: 3vw;
+}
+.l4 {
+  bottom: 4.5vw;
+}
+.l5 {
+  bottom: 6vw;
+}
+.l6 {
+  bottom: 7.5vw;
+}
+.l7 {
+  bottom: 9vw;
+}
+.l8 {
+  bottom: 10.5vw;
+}
+.l9 {
+  bottom: 12vw;
+}
+/* Alturas */
+
+
+
+/* Posicionamento cubos esquerda */
+.ce1 {
+  left: 0;
+}
+.ce2 {
+  left: 3vw;
+}
+.ce3 {
+  left: 7.5vw;
+}
+.ce4 {
+  left: 9vw;
+}
+.ce5 {
+  left: 12vw;
+}
+.ce6 {
+  right: 0;
+}
+.ce7 {
+  right: 1.5vw;
+}
+.ce8 {
+  right: 6vw;
+}
+.ce9 {
+  right: 10.5;
+}
+.ce10 {
+  right: 12vw;
+}
+.ce11 {
+  left: 1.5vw;
+}
+.ce12 {
+  left: 3vw;
+}
+.ce13 {
+  left: 0;
+}
+.ce14 {
+  left: 4.5vw;
+}
+.ce15 {
+  left: 6vw;
+}
+.ce16 {
+  left: 7.5vw;
+}
+.ce17 {
+  left: 3.7vw;
+}
+.ce18 {
+  left: 2.5vw;
+}
+.ce19 {
+  left: 0vw;
+}
+.ce20 {
+  left: 5vw;
+}
+.ce21 {
+  left: 4.5vw;
+}
+.ce22 {
+  left: 1.5vw;
+}
+.ce23 {
+  left: 1.5vw;
+}
+.ce24 {
+  left: 3vw;
+}
+.ce25 {
+  left: 0vw;
+}
+.ce26 {
+  left: 7vw;
+}
+.ce27 {
+  left: 13.5vw;
+}
+.ce28 {
+  left: 15vw;
+}
+/* Posicionamento cubos esquerda */
+
+
+/* Posicionamento cubos meio */
+.cm1 {
+  left: 0;
+}
+.cm2 {
+  left: 3vw;
+}
+.cm3 {
+  left: 7.5vw;
+}
+.cm4 {
+  left: 9vw;
+}
+.cm5 {
+  left: 12vw;
+}
+.cm6 {
+  right: 0;
+}
+.cm7 {
+  right: 1.5vw;
+}
+.cm8 {
+  right: 6vw;
+}
+.cm9 {
+  right: 10.5;
+}
+.cm10 {
+  right: 12vw;
+}
+/* Posicionamento cubos meio */
+
+
+
+/* Posicionamento cubos direita */
+.cd1 {
+  right: 0vw;
+}
+.cd2 {
+  right: 3vw;
+}
+.cd3 {
+  right: 7.5vw;
+}
+.cd4 {
+  right: 9vw;
+}
+.cd5 {
+  right: 12vw;
+}
+.cd6 {
+  left: 7.8vw;
+}
+.cd7 {
+  right: 4.5vw;
+}
+.cd8 {
+  left: 6vw;
+}
+.cd9 {
+  left: 10.5;
+}
+.cd10 {
+  left: 12vw;
+}
+.cd11 {
+  right: 1.5vw;
+}
+.cd12 {
+  right: 3vw;
+}
+.cd13 {
+  right: 0;
+}
+.cd14 {
+  right: 4.5vw;
+}
+.cd15 {
+  right: 6vw;
+}
+.cd16 {
+  right: 7.5vw;
+}
+.cd17 {
+  right: 4.5vw;
+}
+.cd18 {
+  right: 1.5vw;
+}
+.cd19 {
+  right: 0vw;
+}
+.cd20 {
+  right: 6vw;
+}
+.cd21 {
+  right: 4.5vw;
+}
+.cd22 {
+  right: 1.5vw;
+}
+.cd23 {
+  right: 1vw;
+}
+.cd24 {
+  right: 1.5vw;
+}
+.cd25 {
+  right: 3vw;
+}
+.cd26 {
+  right: 0vw;
+}
+.cd27 {
+  right: 14vw;
+}
+.cd28 {
+  right: 3vw;
+}
+.cd29 {
+  right: 10.5vw;
+}
+.cd30 {
+  right: 0vw;
+}
+.cd31 {
+  right: 0vw;
+}
+#linhaBase {
+  width: 100%;
+  height: 1.5vw;
+  background-color: var(--quadradinhos);
+}
+/* Posicionamento cubos direita */
+
+
+/* Altura dos cubos */
+.a1 {
+  transition: transform 10s ease-in-out,
+                opacity 3s ease-in-out,
+                scale 10s linear; 
+  transform: translateY(-250vh);
+}
+
+.a2 {
+  transition: transform 6s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-150vh);
+}
+
+.a3 {
+  transition: transform 3s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-90vh);
+}
+
+.a4 {
+  transition: transform 10s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-230vh);
+}
+
+.a5 {
+  transition: transform 3s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-70vh);
+}
+
+.a6 {
+  transition: transform 1s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-40vh);
+}
+
+.a7 {
+  transition: transform 6s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-130vh);
+}
+
+.a8 {
+  transition: transform 8s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-160vh);
+}
+
+.a9 {
+  transition: transform 1s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-20vh);
+}
+
+.a10 {
+  transition: transform 8s ease-in, 
+                opacity 3s ease-in-out;
+  transform: translateY(-190vh);
+}
+
+/* Altura dos cubos */
+
+/* Cubinhos do footer. TETRIS (CIMA) */

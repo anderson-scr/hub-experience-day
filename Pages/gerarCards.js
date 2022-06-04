@@ -5,7 +5,7 @@ fetch("../Components/Card/card.html")
 .then(data => {
   const terreo = document.querySelector(".containnerDeCards")
 
-  for(let i =0; i < 5; i++) {
+  for(let i =0; i < 20; i++) {
     terreo.innerHTML += data
   }
 })
