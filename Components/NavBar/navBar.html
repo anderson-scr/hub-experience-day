@@ -1,9 +1,14 @@
-<nav class="navigationBar">
+<nav>
   <img src="../../Assets/Svgs/logoSenacReta.svg" alt="Logo Senac Hub Academy" id="some">
   <input type="checkbox" id="toggler">
-  <label for="toggler" id="label-menu"><i class="fa-solid fa-bars"></i></label>
+  <label for="toggler" id="label-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+</label>
   <div class="menu">
   <button class="btnNav" id="btnHome" onClick="document.getElementById('campoAzul').scrollIntoView();">HOME</button>
   <button class="btnNav" id="btnSobreEvento" onClick="document.getElementById('textoLP').scrollIntoView();" >SOBRE O EVENTO</button>
   <button class="btnNav" id="btnPalestrantes" onClick="document.getElementById('secDeAndar').scrollIntoView();">PALESTRANTES</button>
   </div>
+</nav>
