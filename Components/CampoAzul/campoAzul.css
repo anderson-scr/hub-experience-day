@@ -83,7 +83,7 @@ h6{
   width: 40%;
   position: relative;
   margin-top: 3%;
-  margin-right: 8%;
+  margin-right: 5%;
   opacity: 0;
   transition: opacity 2s linear;
 }
@@ -91,7 +91,7 @@ h6{
 
 
 
-@media (max-width: 1400px){
+@media (max-width: 1550px){
   #campoAzul {
     height: 73vh;
   }

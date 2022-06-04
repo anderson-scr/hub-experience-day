@@ -179,24 +179,7 @@
 
 
 
-/* Parte responsavel pela responsividade do SITE */
-@media (max-width: 1400px){
-  #containnerTexto > p {
-    font-size: 14px;
-  }
-  #containnerTexto > h2 {
-    font-size: 20px;
-    margin-top: 0;
-  }
 
-  #containnerLetrasSVG {
-    transform: scale(.7);
-  }
-  #H, #X, #D {
-    transform: scale(.6);
-  }
-}
-/* Parte responsavel pela responsividade do SITE */
 
 
 
@@ -896,3 +879,45 @@
 /* Altura dos cubos */
 
 /* Cubinhos do footer. TETRIS (CIMA) */
+
+
+
+
+
+
+
+/* Parte responsavel pela responsividade do SITE */
+@media (max-width: 1550px){
+  /* Texto */
+  #containnerTexto > h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  #containnerTexto > p {
+    font-size: 18px;
+  }
+  #H, #X, #D {
+    transform: scale(.7);
+  }
+  /* Texto */
+
+
+
+
+  /* Esferas */
+  .wMini {
+    width: 42%;
+  }
+  .wMenor {
+    width: 72%;
+  }
+  .wMedia {
+    width: 83%;
+  }
+  .wGrande {
+    width: 96%;
+  }
+  /* Esferas */
+
+}
+/* Parte responsavel pela responsividade do SITE */
