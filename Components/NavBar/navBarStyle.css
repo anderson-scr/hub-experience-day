@@ -19,9 +19,12 @@
 #header button {
   background-color: transparent;
   border: none;
-  color: var(--orange);
+  color: var(--white);
   font-size: 1.1rem;
   position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color .4s linear;
 }
 #header button::after {
   content: '';
@@ -29,7 +32,7 @@
   bottom: -3px;
   width: 0px;
   height: 2px;
-  background-color: var(--main-bg-color);
+  background-color: var(--ligth-orange);
   left: 0;
   right: 0;
   margin: auto;
@@ -43,17 +46,16 @@
 }
 #header .navigationBar {
   display: flex;
-  gap: 50px;
   justify-content: flex-end;
 }
 .menu{
-  width: 400px;
+  width: 600px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .iconeMenu {
   display: none;
-  color: var(--orange);
+  color: var(--white);
 }
 /* Menu (CIMA) */
 
@@ -78,27 +80,6 @@
   #header > nav{
     display: flex;
     justify-content: space-around;
-  }
-
-  #header button{
-    width: fit-content;
-    height: fit-content;
-    flex-direction: column;
-    padding: 10px 0 10px 10px;
-    float: right;
-    text-align: right;
-  }
-
-  #label-menu{
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    color: var(--white);
-  }
-
-  #toggler:checked ~ .menu{
-    overflow: visible;
-    max-height: 100%;
   }
 }
 /* Menu responsivo */

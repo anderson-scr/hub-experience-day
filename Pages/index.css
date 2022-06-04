@@ -159,9 +159,6 @@
 
 
 /* Campos que aparecem os cards (BAIXO) */
-.secDeAndar {
-  margin-top: 10%;
-}
 .tituloAndar {
   display: flex;
   gap: 1%;
@@ -200,6 +197,7 @@
   }
 }
 /* Parte responsavel pela responsividade do SITE */
+
 
 
 
@@ -249,6 +247,7 @@
 
 
 
+
 /* Sessao dos Apoiadores (BAIXO) */
 #apoiadores {
   width: 90%;
@@ -281,6 +280,12 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+/* Sessao dos Apoiadores (BAIXO) */
+
+
+
+
+
 
 /* Esfera */
 .linhaEsfera {
@@ -367,6 +372,7 @@
   position: fixed;
   opacity: 0;
   transform: scale(0.1);
+  pointer-events: none;
 }
 .orange {
   background-color: #f7951e4d;

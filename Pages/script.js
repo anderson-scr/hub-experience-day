@@ -1,12 +1,14 @@
 const letras = document.querySelectorAll(".letraSVG")
 
 window.addEventListener("scroll", () => {
-  let valorScroll = window.scrollY
-
-  valorScroll > 600? moverLetras(): voltarLetras()
+  window.scrollY > 600? alteracoesNoScroll(): removerAlteracoesScroll()
 })
 
-function moverLetras() {
+
+
+function alteracoesNoScroll() {
+  
+  // Letras do lado do texto
   letras[0].style.left = "35px"
   letras[1].style.left = "40%"
   letras[2].style.left = "83%"
@@ -16,7 +18,9 @@ function moverLetras() {
   letras[2].style.opacity = 1
 }
 
-function voltarLetras() {
+function removerAlteracoesScroll() {
+
+  // Letras do lado do texto
   letras[0].style.left = "300px"
   letras[0].style.opacity = 0
   

@@ -10,6 +10,7 @@
   margin: auto;
   transition: all .5s linear;
   animation: float 5s infinite;
+  transform: rotateX(5deg);
 }
 
 .containnerCubo:hover {
@@ -63,7 +64,7 @@
   0% {
     transform: 
       translateY(0px)
-      rotateX(0deg)
+      rotateX(5deg)
       rotateY(0deg);
   }
   40% {

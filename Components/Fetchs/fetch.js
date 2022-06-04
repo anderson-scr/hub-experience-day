@@ -7,6 +7,7 @@ const fetchHeader = new Promise((resolve) => {
   })
   .then(data => {
     document.querySelector("#header").innerHTML = data
+    menuScroll()
   })
 
   // Fetch do campo azul
@@ -25,6 +26,16 @@ const fetchHeader = new Promise((resolve) => {
   })
   .then(data => {
     document.querySelector("#campoDo3D").innerHTML = data
+
     resolve()
   })
 })
+
+
+// Mudar cor dos botoes na NAV
+function menuScroll() {
+  const botoes = document.querySelectorAll(".btnNav")
+  window.addEventListener("scroll", () => {
+    window.scrollY > 700? botoes.forEach(botao => botao.style.color = "var(--main-bg-color)") : botoes.forEach(botao => botao.style.color = "#fff")
+  })
+}
