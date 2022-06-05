@@ -32,6 +32,13 @@
   font-size: 40px;
   display: inline;
 }
+.textImpact legend {
+  color: var(--white);
+  font-family: var(--textFont);
+  font-weight: 300;
+  font-size: 40px;
+  display: inline;
+}
 
 #textBlue{
   color: var(--orange);

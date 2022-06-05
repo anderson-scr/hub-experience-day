@@ -48,7 +48,7 @@
   justify-content: flex-end;
 }
 .menu{
-  /* width: 600px; */
+  width: 600px;
   display: flex;
   justify-content: space-around;
 }
@@ -69,17 +69,18 @@
     min-height: 40px;
   }
 }
+
 @media (max-width: 600px) {
   #header {
-    justify-content: flex-start;
+    padding-left: 15px !important;
+    width: 100%;
   }
-
   .menu {
-    padding-left: 15px;
     gap: 40px;
+    width: 100%;
   }
   .menu > button {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   
 }

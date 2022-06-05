@@ -1071,6 +1071,9 @@
   #cristoSenhor2 {
     font-size: 28px !important;
   }
+  #containnerTeste {
+    overflow: hidden;
+  }
 }
 /* Imgs organizadores */
 /* Parte responsavel pela responsividade do SITE */
