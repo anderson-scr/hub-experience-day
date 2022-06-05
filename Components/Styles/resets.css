@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 body {
   width: 100%;
@@ -20,4 +21,9 @@ body {
   --orange: #f7941e;
   --ligth-orange: #f7a94a;
   --quadradinhos: #0c4d8531;
+  --hubFont: 'Press Start 2P', cursive;
+  --textFont: 'Fira Code',  monospace;
+  
+  /* --background-blue: #0C4D85; */
+  /* --laranjado:  #f7941e ; */
 }

@@ -2,6 +2,28 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "bootstrap": "^5.2.0-beta1",
-    "bootstrap-icons": "^1.8.3"
-  }
+    "bootstrap-icons": "^1.8.3",
+    "browserify": "^17.0.0",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "requirejs": "^2.3.6",
+    "sequelize": "^6.20.1"
+  },
+  "name": "hub-experience-day",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderson-scr/hub-experience-day.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anderson-scr/hub-experience-day/issues"
+  },
+  "homepage": "https://github.com/anderson-scr/hub-experience-day#readme",
+  "description": ""
 }

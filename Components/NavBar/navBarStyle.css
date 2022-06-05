@@ -82,6 +82,10 @@
   .menu > button {
     font-size: 12px !important;
   }
-  
+  #header button::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+  }
 }
 /* Menu responsivo */

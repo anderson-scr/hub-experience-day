@@ -1,0 +1,224 @@
+/* modal/form */
+form p{
+    font-family: var(--textFont);
+    color: var(--orange);
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    flex-grow: 1;
+}
+.modal{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    display: none;
+
+}
+.modal_content{
+    background-color: var(--white);
+    display: flex;
+    width: 28%;
+    margin: 0 auto;
+    margin-top: 5.5%;
+    padding: 0;
+    border-radius: 30px;
+    border: 2px solid grey;
+}
+.modal_content:hover{
+    border-color: var(--main-bg-color);
+    box-shadow: white;
+}
+.sexo{
+    font-family: var(--textFont);
+    color: rgb(61, 61, 61);
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-bottom:  2px solid silver;
+}
+/* animaçao dos inputs */
+.wrapper .input-data{
+    font-family: var(--textFont);
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.wrapper .input-data input{
+    font-family: var(--textFont);
+    font-weight: lighter;
+    color: rgb(61, 61, 61);
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border-bottom:  2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    
+}
+.containerChecks {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+input{
+    font-family: var(--textFont);
+}
+/* espaçamento */
+.espaco{
+    padding: 20px;
+}
+.espaco_menor{
+    padding: 0px 20px 5px 20px;
+}
+
+#cancelar_div{
+    width: 50%;
+}
+#enviar_div{
+    width: 27%;
+}
+#botoes{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+/* BOTAO CANCELAR ANIMAÇÃO */
+.btn_cancelar{
+    height: 30px;
+    width: 120px;
+    border: 3px solid var(--background-blue);
+    color: var(--background-blue);
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.btn_cancelar::before, .btn_cancelar::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: 1s ease;
+}
+.btn_cancelar::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+.btn_cancelar::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+.btn_cancelar:hover::before, .btn_cancelar:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+.btn_cancelar:hover{
+    background-color: white;
+}
+
+
+/* botao enviar animação */
+.btn_enviar{
+    height: 30px;
+    width: 120px;
+    border: 3px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.btn_enviar::before, .btn_enviar::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: 1s ease;
+}
+.btn_enviar::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+.btn_enviar::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+.btn_enviar:hover::before, .btn_enviar:hover::after{
+
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+.btn_enviar:hover{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+/* checkbox animaçãozinha*/
+.check_box label{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+input[type='checkbox'] {
+    position: absolute;
+    transform: scale(0);
+}
+input[type='checkbox']:checked~ .checkbox{
+    transform: rotate(41deg);
+    width: 10px;
+    margin-left: 1px;
+    border-color: var(--blue);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+.checkbox{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #434343;
+    border-radius: 3px;
+    transition: all 0.375s;
+}
+.containnerCheckzinho {
+  min-width: 24px;
+}
+.termo{
+    transform: translateY(-2px);
+    padding-left: 10px;
+}
+.termo h6{
+    font-size: 12px !important;
+    font-family: var(--textFont);
+    font-weight: lighter;
+}
+
+
+/* Parte da imagem */
+/* #containnerImg {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  flex-grow: 1;
+} */

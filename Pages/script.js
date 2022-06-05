@@ -15,7 +15,6 @@ const quadradinhos = {
 
 
 window.addEventListener("scroll", () => {
-  console.log(scrollY)
   if(window.innerWidth > 700) {
     window.scrollY > 550? alteracoesNoScroll(): removerAlteracoesScroll()
   } else {
@@ -23,24 +22,19 @@ window.addEventListener("scroll", () => {
   }
   console.log(window.scrollY)
   // 3000
-  window.scrollY > 3000? abaixar([...quadradinhos["a1"], ...quadradinhos["a4"]])
-                          : subir([...quadradinhos["a1"], ...quadradinhos["a4"]])
+  window.scrollY > 3000? abaixar([...quadradinhos["a1"], ...quadradinhos["a4"]]) : ''
 
   // 3500
-  window.scrollY > 3500? abaixar([...quadradinhos["a10"], ...quadradinhos["a8"]])
-                          : subir([...quadradinhos["a10"], ...quadradinhos["a8"]])
+  window.scrollY > 3500? abaixar([...quadradinhos["a10"], ...quadradinhos["a8"]]) : ''
 
   // 4000
-  window.scrollY > 4000? abaixar([...quadradinhos["a2"], ...quadradinhos["a7"]])
-                          : subir([...quadradinhos["a2"], ...quadradinhos["a7"]])
+  window.scrollY > 4000? abaixar([...quadradinhos["a2"], ...quadradinhos["a7"]]) : ''
 
   // 4500
-  window.scrollY > 4500? abaixar([...quadradinhos["a3"], ...quadradinhos["a5"]]) 
-                          : subir([...quadradinhos["a3"], ...quadradinhos["a5"]])
+  window.scrollY > 4500? abaixar([...quadradinhos["a3"], ...quadradinhos["a5"]]) : ''
 
   // 4700
-  window.scrollY > 4700? abaixar([...quadradinhos["a6"], ...quadradinhos["a9"]])
-                          : subir([...quadradinhos["a6"], ...quadradinhos["a9"]])
+  window.scrollY > 4700? abaixar([...quadradinhos["a6"], ...quadradinhos["a9"]]) : ''
 })
 
 
@@ -76,9 +70,6 @@ function abaixar(listaQuadradinhos) {
     quadrinho.style.transform = "translateY(0) scale(1)"
     quadrinho.style.opacity = "1"
   });
-}
-function subir(listaQuadradinhos) {
-
 }
 
 

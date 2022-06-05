@@ -19,20 +19,29 @@
     <link rel="stylesheet" href="../Components/Styles/waveStyle.css" />
     <link rel="stylesheet" href="../Components/cubo3D/Cubo3DStyle.css" />
     <link rel="stylesheet" href="../Components/Card/cardStyle.css" />
+    <link rel="stylesheet" href="../Components/Modal/modalStyle.css">
 
     <!-- Scrips -->
     <script src="../Components/Fetchs/fetch.js" defer></script>
     <script src="./script.js" defer></script>
     <script src="../Components/CampoAzul/campoAzul.js" defer></script>
-    <script src="./gerarCards.js" defer></script>
-    <script src="./footerAnimacao.js" defer></script>
+    <script src="./gerarCards.js" defer type="module"></script>
+    <script src="../Components/Modal/modalScript.js" defer></script>
 
-
+    <!-- Jquerry for masks -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
     <title>Hub Experience Day</title>
   </head>
   <body>
     <div id="containnerTeste">
+
+      <section id="containnerModal">
+        <!-- Fetch do modal -->
+      </section>
+
+
       <header id="header">
         <!-- Fetch -->
       </header>
@@ -188,53 +197,53 @@
         <div id="seguraApoiadores">
           <!-- 2 -->
           <div class="linhaEsfera wMini">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador01"></div>
+            <div class="apoiador" id="apoiador02"></div>
           </div>
 
           <!-- 3 -->
           <div class="linhaEsfera wMenor">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador03"></div>
+            <div class="apoiador" id="apoiador04"></div>
+            <div class="apoiador" id="apoiador05"></div>
           </div>
 
           <!-- 4 -->
           <div class="linhaEsfera wMedia">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador06"></div>
+            <div class="apoiador" id="apoiador07"></div>
+            <div class="apoiador" id="apoiador08"></div>
+            <div class="apoiador" id="apoiador09"></div>
           </div>
 
           <!-- 5 -->
           <div class="linhaEsfera wGrande">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador10"></div>
+            <div class="apoiador" id="apoiador11"></div>
+            <div class="apoiador" id="apoiador12"></div>
+            <div class="apoiador" id="apoiador13"></div>
+            <div class="apoiador" id="apoiador14"></div>
           </div>
 
           <!-- 4 -->
           <div class="linhaEsfera wMedia">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador15"></div>
+            <div class="apoiador" id="apoiador16"></div>
+            <div class="apoiador" id="apoiador17"></div>
+            <div class="apoiador" id="apoiador18"></div>
           </div>
 
           <!-- 3 -->
           <div class="linhaEsfera wMenor">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador19"></div>
+            <div class="apoiador" id="apoiador20"></div>
+            <div class="apoiador" id="apoiador21"></div>
           </div>
 
           <!-- 2 -->
           <div class="linhaEsfera wMini">
-            <div class="apoiador"></div>
-            <div class="apoiador"></div>
+            <div class="apoiador" id="apoiador22"></div>
+            <div class="apoiador" id="apoiador23"></div>
           </div>
         </div>
       </section>
