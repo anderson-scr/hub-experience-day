@@ -1,132 +1,163 @@
 <div id="div-modal" class="modal">
-	<div class="modal_content">
+	<div id="gradient">
+		<div class="modal_content">
+			<div id="containnerImg">
+				<h2>Elon Musk</h2>
+				<p>CEO da Tesla e SpaceX</p>
 
-		<form>
-
-			<p>Formulario de Inscrição</p>
-			<!-- campo nome -->
-			<div class="espaco">
-				<div class="wrapper">
-					<div class="input-data">
-						<input type="text" name="nome" required>
-						<label>Nome</label>
+				<div id="containnerImgSocial">
+					<div id="containnerSocial">
+						<img src="../../Assets/Svgs/instagram.svg" alt="Icone instragram">
+						<img src="../../Assets/Svgs/linkedin.svg" alt="Icone Linkedin">
 					</div>
+					<img src="../../Assets/Imgs/tia2.jpeg" class="imgModal" alt="Tia 2 jepege">
 				</div>
-			</div>
 
-
-
-			<!-- campo cpf -->
-			<script type="text/javascript">
-				$("#cpf").mask("000.000.000-00");
-			</script>
-			<div class="espaco">
-				<div class="wrapper">
-					<div class="input-data">
-						<input type="text" name="cpf" id="cpf" required>
-						<label>CPF</label>
+				<div class="containnerInformacoes">
+					<h3>Titulo da palestra</h3>
+					<div class="containnerVagas">
+						<img src="../../Assets/Svgs/people.svg" alt="Icone Linkedin">
+						<p> <strong>04/15</strong> </p>
 					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+						molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+						numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+						optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+						obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+						nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+						tenetur error, harum nesciunt ipsum debitis quas aliquid.
+					</p>
 				</div>
+
 			</div>
+			<form>
 
-
-
-			<!-- campo data de nascimento -->
-			<script type="text/javascript">
-				$("#data_nasc").mask("00/00/0000");
-			</script>
-			<div class="espaco">
-				<div class="wrapper">
-					<div class="input-data">
-						<input type="text" name="data_nasc" id="data_nasc" required>
-						<label>Data de Nascimento</label>
-					</div>
-				</div>
-			</div>
-
-
-
-			<!-- campo e-mail -->
-			<div class="espaco">
-				<div class="wrapper">
-					<div class="input-data">
-						<input type="text" required>
-						<label>E-mail</label>
-					</div>
-				</div>
-			</div>
-
-
-
-			<!-- select sexo -->
-			<div class="espaco">
-				<div>
-					<select name="select" class="sexo" required>
-						<option selected disabled>Sexo</option>
-						<option value="Masculino">Masculino</option>
-						<option value="Feminino">Feminino</option>
-						<option value="Outro">Outro</option>
-					</select>
-				</div>
-			</div>
-
-
-
-			<!-- campo telefone -->
-			<script type="text/javascript">
-				$("#telefone").mask("(00) 0 0000-0000");
-			</script>
-			<div class="espaco">
-				<div class="wrapper">
-					<div class="input-data">
-						<input type="text" name="telefone" id="telefone" required>
-						<label>Telefone</label>
-					</div>
-				</div>
-			</div>
-
-
-
-			<!-- check box -->
-			<div class="espaco_menor">
-				<div class="check_box">
-					<label class="containerChecks">
-						<div class="containnerCheckzinho">
-							<input type="checkbox" required>
-							<span class="checkbox"></span>
-						</div>
-						<div class="termo">
-							<h6>Ao enviar este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</h6>
-						</div>
-					</label>
-				</div>
-				</div>
-					<div class="espaco_menor">
-						<div class="check_box">
-							<label id="containerChecks">
-								<div class="containnerCheckzinho">
-									<input type="checkbox" required>
-									<span class="checkbox"></span>
-								</div>
-								<div class="termo">
-									<h6>Você concorda em receber informações a respeito de cursos relacionados ao Senac.</h6>
-								</div>
-							</label>
+				<p>Formulario de Inscrição</p>
+				<!-- campo nome -->
+				<div class="espaco">
+					<div class="wrapper">
+						<div class="input-data">
+							<input type="text" name="nome" required>
+							<label>Nome</label>
 						</div>
 					</div>
-				<div>
-					<div class="espaco">
-						<div id="botoes">
-							<div id="cancelar_div">
-								<button class="btn_cancelar" id="cancelar" onclick="closeModal()">Cancelar</button>
+				</div>
+
+
+
+				<!-- campo cpf -->
+				<script type="text/javascript">
+					$("#cpf").mask("000.000.000-00");
+				</script>
+				<div class="espaco">
+					<div class="wrapper">
+						<div class="input-data">
+							<input type="text" name="cpf" id="cpf" required>
+							<label>CPF</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- campo data de nascimento -->
+				<script type="text/javascript">
+					$("#data_nasc").mask("00/00/0000");
+				</script>
+				<div class="espaco">
+					<div class="wrapper">
+						<div class="input-data">
+							<input type="text" name="data_nasc" id="data_nasc" required>
+							<label>Data de Nascimento</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- campo e-mail -->
+				<div class="espaco">
+					<div class="wrapper">
+						<div class="input-data">
+							<input type="text" required>
+							<label>E-mail</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- select sexo -->
+				<div class="espaco">
+					<div>
+						<select name="select" class="sexo" required>
+							<option selected disabled>Sexo</option>
+							<option value="Masculino">Masculino</option>
+							<option value="Feminino">Feminino</option>
+							<option value="Outro">Outro</option>
+						</select>
+					</div>
+				</div>
+
+
+
+				<!-- campo telefone -->
+				<script type="text/javascript">
+					$("#telefone").mask("(00) 0 0000-0000");
+				</script>
+				<div class="espaco">
+					<div class="wrapper">
+						<div class="input-data">
+							<input type="text" name="telefone" id="telefone" required>
+							<label>Telefone</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- check box -->
+				<div class="espaco_menor">
+					<div class="check_box">
+						<label class="containerChecks">
+							<div class="containnerCheckzinho">
+								<input type="checkbox" required>
+								<span class="checkbox"></span>
 							</div>
-							<div id="enviar_div">
-								<button class="btn_enviar" id="enviar">Enviar</button>
+							<div class="termo">
+								<h6>Ao enviar este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</h6>
+							</div>
+						</label>
+					</div>
+					</div>
+						<div class="espaco_menor">
+							<div class="check_box">
+								<label id="containerChecks">
+									<div class="containnerCheckzinho">
+										<input type="checkbox" required>
+										<span class="checkbox"></span>
+									</div>
+									<div class="termo">
+										<h6>Você concorda em receber informações a respeito de cursos relacionados ao Senac.</h6>
+									</div>
+								</label>
+							</div>
+						</div>
+					<div>
+						<div class="espaco">
+							<div id="botoes">
+								<div id="cancelar_div">
+									<button class="btn_cancelar" id="cancelar" onclick="closeModal()">Cancelar</button>
+								</div>
+								<div id="enviar_div">
+									<button class="btn_enviar" id="enviar">Enviar</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 </div>

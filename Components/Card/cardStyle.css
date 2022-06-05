@@ -198,7 +198,7 @@
   margin-left: 60px;
   margin-top: 40px;
 }
-#containnerSocial   {
+#containnerSocialCard   {
   height: 34px;
   display: flex;
   gap: 25px;
@@ -206,7 +206,7 @@
   align-items: center;
   padding-bottom: 17px;
 }
-#containnerSocial > img {
+#containnerSocialCard > img {
   border-radius: 0px;
   cursor: pointer;
 }
