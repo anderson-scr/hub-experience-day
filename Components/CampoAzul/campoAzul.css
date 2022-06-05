@@ -102,3 +102,26 @@ h6{
     transform: scale(.75);
   }
 }
+
+@media (max-width: 1250px){
+  #campoDo3D {
+    margin-top: 20%;
+    padding-right: 85%;
+  }
+  #campoAzul {
+    display: flex;
+    flex-direction: column;
+  }
+  .textImpact > h2 {
+    font-size: 28px;
+  }
+  .textImpact > div > h2 {
+    font-size: 28px;
+  }
+  #textBlue {
+    font-size: 26px ;
+  }
+  .text {
+    padding-left: 15%;
+  }
+}

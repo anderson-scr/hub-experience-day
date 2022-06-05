@@ -172,7 +172,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 90px;
 }
 /* Campos que aparecem os cards (CIMA) */
 
@@ -887,8 +887,9 @@
 
 
 /* Parte responsavel pela responsividade do SITE */
+
+/* Texto */
 @media (max-width: 1550px){
-  /* Texto */
   #containnerTexto > h2 {
     font-size: 32px;
     margin-top: 0;
@@ -899,12 +900,45 @@
   #H, #X, #D {
     transform: scale(.7);
   }
-  /* Texto */
+}
+@media (max-width: 1000px){
+  #textoLP {
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+  }
+  #containnerLetrasSVG {
+    min-width: 60%;
+    min-height: 50%;
+    margin-right: 12%;
+  }
+}
+
+/* Texto */
 
 
 
 
-  /* Esferas */
+
+/* cards */
+@media (max-width: 1100px) {
+  .containnerDeCards {
+    gap: 20px;
+  }
+}
+/* cards */
+
+
+
+
+
+/* Esferas */
+@media (max-width: 1000px) {
+  .apoiador {
+    transform: scale(.75);
+  }
+  .linhaEsfera {
+    margin-bottom: 0;
+  }
   .wMini {
     width: 42%;
   }
@@ -917,7 +951,6 @@
   .wGrande {
     width: 96%;
   }
-  /* Esferas */
-
 }
+/* Esferas */
 /* Parte responsavel pela responsividade do SITE */
