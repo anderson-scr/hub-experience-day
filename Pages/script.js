@@ -15,8 +15,11 @@ const quadradinhos = {
 
 
 window.addEventListener("scroll", () => {
-  window.scrollY > 550? alteracoesNoScroll(): removerAlteracoesScroll()
-  console.log(window.scrollY)
+  if(window.innerWidth > 700) {
+    window.scrollY > 550? alteracoesNoScroll(): removerAlteracoesScroll()
+  } else {
+    window.scrollY > 150? alteracoesNoScroll(): removerAlteracoesScroll()
+  }
   // 3000
   window.scrollY > 3000? abaixar([...quadradinhos["a1"], ...quadradinhos["a4"]])
                           : subir([...quadradinhos["a1"], ...quadradinhos["a4"]])

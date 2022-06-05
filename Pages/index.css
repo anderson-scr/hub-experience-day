@@ -227,11 +227,7 @@
   width: 190px;
 }
 /* Parte dos patrocinadores (CIMA)*/
-@media (max-width: 770px) {
-  #seguraIMG > img {
-    width: 120px;
-  }
-}
+
 
 
 
@@ -926,6 +922,27 @@
     margin-right: 12%;
   }
 }
+@media (max-width: 750px) {
+  #containnerTexto {
+    width: 80%;
+  }
+  #containnerTexto > h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  #containnerTexto > p {
+    font-size: 14px;
+  }
+  #H, #X, #D {
+    transform: scale(.4);
+  }
+  #estiloTitulo > h2 {
+    font-size: 36px;
+  }
+  .subTitulo {
+    font-size: 20px;
+  }
+}
 /* Texto */
 
 
@@ -965,5 +982,95 @@
     width: 96%;
   }
 }
+@media (max-width: 650px) {
+  .apoiador {
+    transform: scale(.65);
+  }
+  .linhaEsfera {
+    margin-bottom: 0;
+  }
+  .wMini {
+    width: 42%;
+  }
+  .wMenor {
+    width: 72%;
+  }
+  .wMedia {
+    width: 83%;
+  }
+  .wGrande {
+    width: 100%;
+  }
+}
 /* Esferas */
+
+
+
+
+
+/* Imgs organizadores */
+@media (max-width: 770px) {
+  #seguraIMG > img {
+    width: 120px;
+  }
+}
+@media (max-width: 470px) {
+  #seguraIMG > img {
+    width: 60px;
+  }
+  #tituloOrganizacao, #tituloApoiadores, #tituloInsCon {
+    font-size: 32px !important;
+  }
+  .subTitulo {
+    font-size: 14px;
+  }
+  .seguraCampos {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .camposFooter > legend {
+    font-size: 16px;
+  }
+  .camposFooter > img {
+    width: 60px !important;
+  }
+  .linhaEsfera {
+    margin-bottom: 0;
+  }
+  .apoiador {
+    min-width: 80px !important;
+  }
+  #containnerLetrasSVG {
+    margin-right: 160px !important;
+  }
+  .setinhaContainner {
+    display: none;
+  }
+  #campoAzul {
+    align-items: flex-start !important;
+  }
+  #campoDo3D {
+    transform: scale(.5);
+  }
+  #campoDo3D {
+    padding-right: 77% !important;
+  }
+  .text {
+    padding: 0 !important;
+    width: 340px !important;
+  }
+  .textImpact {
+    margin: 0 !important;
+  }
+  .textImpact > h2 {
+    font-size: 22px !important;
+  }
+  #cristoSenhor {
+    font-size: 24px !important;
+  }
+  #cristoSenhor2 {
+    font-size: 28px !important;
+  }
+}
+/* Imgs organizadores */
 /* Parte responsavel pela responsividade do SITE */

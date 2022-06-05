@@ -3,7 +3,6 @@
   position: fixed;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 8%;
   padding-right: 8%;
   width: 100%;
   z-index: 10;
@@ -49,7 +48,7 @@
   justify-content: flex-end;
 }
 .menu{
-  width: 600px;
+  /* width: 600px; */
   display: flex;
   justify-content: space-around;
 }
@@ -63,23 +62,25 @@
 
 
 /* Menu responsivo (BAIXO) */
-.iconeMenu{
-  width: 30px;
-  height: 30px;
-}
-
 @media (max-width: 940px){
-  .iconeMenu {
-    display: flex;
-  }
-
-  .menu{
-    display: none;
-  }
-
   #header > nav{
     display: flex;
     justify-content: space-around;
+    min-height: 40px;
   }
+}
+@media (max-width: 600px) {
+  #header {
+    justify-content: flex-start;
+  }
+
+  .menu {
+    padding-left: 15px;
+    gap: 40px;
+  }
+  .menu > button {
+    font-size: 14px !important;
+  }
+  
 }
 /* Menu responsivo */
