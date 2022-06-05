@@ -13,6 +13,7 @@
 
 
 
+
 /* Setinha da direita para scroll */
 .setinhaContainner{
   position: absolute;
@@ -226,7 +227,11 @@
   width: 190px;
 }
 /* Parte dos patrocinadores (CIMA)*/
-
+@media (max-width: 770px) {
+  #seguraIMG > img {
+    width: 120px;
+  }
+}
 
 
 
@@ -875,9 +880,7 @@
                 opacity 3s ease-in-out;
   transform: translateY(-190vh);
 }
-
 /* Altura dos cubos */
-
 /* Cubinhos do footer. TETRIS (CIMA) */
 
 
@@ -887,6 +890,17 @@
 
 
 /* Parte responsavel pela responsividade do SITE */
+/* Waves */
+@media(max-width: 770px) {
+  #waves {
+    top: -40px;
+  }
+}
+/* Waves */
+
+
+
+
 
 /* Texto */
 @media (max-width: 1550px){
@@ -912,7 +926,6 @@
     margin-right: 12%;
   }
 }
-
 /* Texto */
 
 
