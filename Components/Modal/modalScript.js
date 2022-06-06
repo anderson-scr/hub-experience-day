@@ -1,6 +1,6 @@
 function openModal() {
   let modal = document.querySelector("#div-modal");
-        
+  
   if (typeof modal == 'undefined' || modal == null) return
 
   modal.style.display = 'block';
@@ -9,6 +9,8 @@ function openModal() {
   const setinhaCima = document.querySelector("#setinhaCima")
   setinhaCima.style.visibility = "hidden"
   setinhaBaixo.style.visibility = "visible"
+
+  document.querySelector("body").style.overflow = "hidden"
   
   mostraEscondeSetinha(setinhaBaixo, setinhaCima)
   const btnEnviar = document.querySelector("#enviar")
@@ -27,6 +29,7 @@ function closeModal() {
   if (typeof modal == 'undefined' || modal == null) return
 
   modal.style.display = 'none';
+  document.querySelector("body").style.overflow = "visible"
 }
 
 

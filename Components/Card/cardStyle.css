@@ -133,7 +133,6 @@
   align-items: center;
   gap: 6px;
   padding-left: 25px;
-  margin-top: 10px;
 }
 .bi-calendar4-week {
   color: #fff;
@@ -228,7 +227,6 @@
   text-align: center;
   cursor: pointer;
   height: 40px;
-  padding-top: 7px;
 }
 
 #inscricao:hover,
