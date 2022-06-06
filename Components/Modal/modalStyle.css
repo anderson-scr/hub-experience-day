@@ -41,13 +41,18 @@ form p{
   height: 99%;
 }
 .modal_content::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   background-color: transparent;
 }
 .modal_content::-webkit-scrollbar-thumb {
-  background-color: var(--main-bg-color);
-  border-radius: 5px;
+  border: 3px solid var(--white);
+  background-color: var(--quadradinhos);
+  border-radius: 15px;
 }
+.modal_content::-webkit-scrollbar-button {
+  height: 10px;
+}
+
 .modal_content:hover{
   box-shadow: white;
 }
