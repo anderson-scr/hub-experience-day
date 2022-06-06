@@ -1,0 +1,40 @@
+create database expday character set utf8mb4 collate utf8mb4_unicode_ci;
+
+
+create table usuario(
+	id_usuario int not null auto_increment primary key,
+	nome varchar(50),
+	cpf varchar(11),
+	data_nascimento date,
+	email varchar(50),
+	sexo enum("Masculino", "Feminino", "Outro"),
+	telefone varchar(11)
+);
+
+create table palestra(
+	id_palestra int not null primary key,
+	nome_sala varchar(50),
+	andar_sala varchar(20),
+    
+	nome_palestrante varchar(50),
+  sub_info_palestrante varchar(50),
+  instagram_palestrante varchar(50),
+  linkedin_palestrante varchar(50),
+  img_palestrante varchar(100),
+    
+	titulo_palestra varchar(50),
+	descricao_palestra text,
+
+	hora_palestra time,
+  data_palestra date,
+	limite_pessoa int
+);
+
+create table inscricao(
+	fk_usuario int not null,
+	fk_palestra int not null,
+	foreign key (fk_usuario) references usuario(id_usuario),
+	foreign key (fk_palestra) references palestra(id_palestra)
+);
+
+

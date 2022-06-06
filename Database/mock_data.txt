@@ -1,0 +1,202 @@
+insert into palestra(id_palestra, nome_sala, andar_sala, nome_palestrante, sub_info_palestrante, instagram_palestrante, 
+						linkedin_palestrante, img_palestrante, titulo_palestra, descricao_palestra, hora_palestra, data_palestra, limite_pessoa) values
+	(1, "nome Sala 1", "1º andar", "Nome do Palestrante 1", "Informacao sobre palestra", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa01.jpg",
+     "Titulo da Palestra 1", " 01Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "16:30:00", "2022-06-22", 15),
+
+	(2, "nome Sala 2", "3º andar", "Nome do Palestrante 2", "Informacao sobre palestra 2", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa02.jpg",
+     "Titulo da Palestra 2", "02Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "08:30:00", "2022-06-22", 20),
+
+	(3, "nome Sala 3", "2º andar", "Nome do Palestrante 3", "Informacao sobre palestra 3", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa03.jpg",
+     "Titulo da Palestra 3", "03Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "13:30:00", "2022-06-22", 10),
+
+	(4, "nome Sala Sala 4", "Terreo", "Nome do Palestrante 4", "Informacao sobre palestra 4", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa04.jpg",
+     "Titulo da Palestra 4", "04Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "16:33:00", "2022-06-22", 07),
+
+	(5, "nome Sala 5", "5º andar", "Nome do Palestrante 5", "Informacao sobre palestra 5", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa05.jpg",
+     "Titulo da Palestra 5", "05Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "11:30:00", "2022-06-22", 23),
+
+	(6, "nome Sala 6", "6º andar", "Nome do Palestrante 6", "Informacao sobre palestra 6", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa06.jpg",
+     "Titulo da Palestra 6", "06Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "09:30:00", "2022-06-22", 05),
+
+	(7, "nome Sala 7", "7º andar", "Nome do Palestrante 7", "Informacao sobre palestra 7", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa07.jpg",
+     "Titulo da Palestra 7", "07Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "16:00:00", "2022-06-22", 09),
+
+	(8, "nome Sala Sala Sala 8", "2º andar", "Nome do Palestrante 8", "Informacao sobre palestra 8", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa08.jpg",
+     "Titulo da Palestra 8", "08Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "07:30:00", "2022-06-22", 05),
+
+	(9, "nome Sala 9", "9º andar", "Nome do Palestrante 9", "Informacao sobre palestra 9", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa09.jpg",
+     "Titulo da Palestra 9", "09Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "13:30:00", "2022-06-22", 20),
+
+	(10, "nome Sala 10", "2º andar", "Nome do Palestrante grande 10", "Informacao sobre palestra grande 10", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa10.jpg",
+     "Titulo da Palestra 10", "10Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "18:30:00", "2022-06-22", 15),
+
+	(11, "nome Sala 11", "3º andar", "Nome do Palestrante grande 11", "Informacao sobre palestra grande 11", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa11.jpg",
+     "Titulo da Palestra 11", "11Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "19:30:00", "2022-06-22", 15),
+
+	(12, "nome Sala 12", "1º andar", "Nome do Palestrante grande 12", "Informacao sobre palestra grande 12", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa12.jpg",
+     "Titulo da Palestra 12", "12Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "08:30:00", "2022-06-22", 15),
+
+	(13, "nome Sala 13", "13º andar", "Nome do Palestrante grande 13", "Informacao sobre palestra grande 13", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa13.jpg",
+     "Titulo da Palestra 13", "13Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "10:30:00", "2022-06-22", 12),
+
+	(14, "nome Sala 14", "2º andar", "Nome do Palestrante grande 14", "Informacao sobre palestra grande 14", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa14.jpg",
+     "Titulo da Palestra 14", "14Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "20:30:00", "2022-06-22", 14),
+
+	(15, "nome Sala 15", "3º andar", "Nome do Palestrante grande 15", "Informacao sobre palestra grande 15", "https://www.instagram.com/", "https://www.linkedin.com/", "./Assets/Imgs/Palestrantes/pessoa15.jpg",
+     "Titulo da Palestra 15", "15Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem!", "21:30:00", "2022-06-22", 10);
+
+
+
+
+insert into usuario(nome, cpf, data_nascimento, email, sexo, telefone) values
+	("Anderson Salles Carrion", "06495690169", "1997-02-18", "anderson.scr@outlook.com", "Masculino", "67991928338");

@@ -21,6 +21,7 @@ form p{
   justify-content: center;
   align-items: center;
   border-radius: 33px;
+  overflow: hidden;
 
   position: fixed;
   top: 0;
@@ -35,6 +36,7 @@ form p{
   padding: 0;
   border-radius: 30px;
   overflow: hidden;
+  position: relative;
   width: 99%;
   height: 99%;
 }
@@ -70,11 +72,14 @@ form p{
 }
 .input-data input:focus ~ label,
 .input-data input:valid ~ label{
-  transform: translateY(-20px);
+  transform: translateY(-28px);
   font-size: 15px;
   color: var(--main-bg-color);
   font-weight: bold;
     
+}
+.input-data input:focus {
+  border-color: var(--ligth-orange);
 }
 .containerChecks {
 display: flex;
@@ -230,8 +235,7 @@ input[type='checkbox']:checked~ .checkbox{
 /* Parte da imagem */
 #containnerImg {
   width: 100%;
-  flex-grow: 1;
-  height: 100%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,12 +243,19 @@ input[type='checkbox']:checked~ .checkbox{
   text-align: center;
   overflow-y: scroll;
 }
+#containnerImg > h2 {
+  color: var(--orange);
+}
+.containnerInformacoes > h3 {
+  color: var(--orange);
+}
 #containnerImg::-webkit-scrollbar {
   display: none;
 }
 #containnerImgSocial {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -252,6 +263,8 @@ input[type='checkbox']:checked~ .checkbox{
 .imgModal {
   width: 60%;
   border-radius: 15px;
+  border: 4px solid var(--main-bg-color);
+  box-shadow: 3px 4px 15px 3px rgba(0, 0, 0, 0.25);
 }
 .containnerInformacoes {
   margin-top: 8px;
@@ -259,11 +272,10 @@ input[type='checkbox']:checked~ .checkbox{
   height: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
-.containnerInformacoes > p {
+#paragrafo {
   text-align: justify;
-  height: 65%;
+  height: auto;
 }
 #containnerSocial {
   position: absolute;
@@ -288,4 +300,51 @@ input[type='checkbox']:checked~ .checkbox{
 .containnerVagas > img {
   width: 20px;
   padding-bottom: 16px;
+}
+.espacoExtra {
+  height: 40px;
+  width: 5px;
+}
+
+.containnerSetinha {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  z-index: 2;
+  background-color: var(--white);
+}
+#containnerSetinhaCima {
+  top: 0;
+}
+#containnerSetinhaBaixo {
+  bottom: 5px;
+  background-color: transparent !important;
+}
+#setinhaCima {
+  transform: rotate(180deg);
+  animation: floatSetinhaCima 1.5s infinite;
+  margin-top: 3px;
+  visibility: hidden;
+}
+#setinhaBaixo {
+  padding-bottom: 3px;
+  animation: floatSetinha 1.5s infinite;
+}
+.seta {
+  width: 20px;
+}
+@keyframes floatSetinha {
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes floatSetinhaCima {
+  50% {
+    transform: translateY(-4px) rotate(180deg);
+  }
 }

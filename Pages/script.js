@@ -20,7 +20,6 @@ window.addEventListener("scroll", () => {
   } else {
     window.scrollY > 150? alteracoesNoScroll(): removerAlteracoesScroll()
   }
-  console.log(window.scrollY)
   // 3000
   window.scrollY > 3000? abaixar([...quadradinhos["a1"], ...quadradinhos["a4"]]) : ''
 
@@ -71,6 +70,7 @@ function abaixar(listaQuadradinhos) {
     quadrinho.style.opacity = "1"
   });
 }
+
 
 
 /* a1a4-3000      a10a8-3500      a2a7-4000     a3a5-4500   a6a9-4700  */

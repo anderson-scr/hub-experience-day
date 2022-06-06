@@ -1,5 +1,6 @@
 // Fadezinho ao carregar a pagina. 
 document.addEventListener("DOMContentLoaded", fetchHeader.then(() => {
+  
   setTimeout(function() {
     //your code here
       const texto1 = document.querySelector(".textImpact")
