@@ -278,12 +278,33 @@
   margin: auto;
   margin-bottom: 30px;
 }
+.imgApoiador {
+  width: inherit;
+  height: inherit;
+  transform: scale(.65);
+}
+#apoiador03, #apoiador04, #apoiador01 {
+  background-color: #000 !important;
+}
 .apoiador {
-  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#apoiador01 > img {
+  transform: scale(.45);
+}
+#apoiador02 > img {
+  transform: scale(.17);
+}
+.apoiador {
+  min-width: 115px;
+  max-width: 115px;
   height: 115px;
   border: 3px solid var(--main-bg-color);
   border-radius: 50%;
   transition: transform .3s linear;
+  overflow: hidden;
 }
 .apoiador:hover {
   transform: scale(1.2);

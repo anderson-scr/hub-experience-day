@@ -45,8 +45,8 @@ form p{
   background-color: transparent;
 }
 .modal_content::-webkit-scrollbar-thumb {
-  background-color: var(--quadradinhos);
   border: 3px solid var(--white);
+  background-color: var(--quadradinhos);
   border-radius: 15px;
 }
 .modal_content::-webkit-scrollbar-button {

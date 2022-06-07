@@ -12,6 +12,7 @@ function openModal() {
 
   document.querySelector("body").style.overflow = "hidden"
   
+  
   mostraEscondeSetinha(setinhaBaixo, setinhaCima)
   const btnEnviar = document.querySelector("#enviar")
   btnEnviar.addEventListener("click", verificaEntrada)

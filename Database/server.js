@@ -1,34 +1,27 @@
-async function connect() {
-  if(global.connection && global.connection.state !== "disconnected")
-    return global.connection;
-  
-  const mysql = require("mysql2")
-  const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'anderson',
-    database: 'expday',
-    password: "@Zg%kFKhNitK"
-  });
-  
-
-  // console.log("Conectou no Banco")
-  global.connection = connection
-  return connection
-}
-connect()
+const express = require("express")
+const app = express()
+const dbService = require("./dbService")
 
 
+const cors = require("cors")
+const dotenv = require("dotenv")
+dotenv.config()
 
-async function queryUsuarios() {
-  const conn = await connect()
-  conn.execute(
-  'SELECT * FROM usuario',
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
 
-  function(err, results, fields) {
-    console.log(results); // results contains rows returned by server
-    const resultados = results
-    return resultados
-  }
 
-)};
-queryUsuarios();
+app.get('/getAll', (request, response) => {
+  const classeBanco = new dbService.DbService()
+  const resultado = classeBanco.queryTodosCards()
+  // console.log(resultado)
+
+  resultado
+    .then(data => response.json({ data: data }))
+    
+    .catch(erro => console.log(erro))
+})
+
+
+app.listen(process.env.PORT, () => console.log("App is running"))

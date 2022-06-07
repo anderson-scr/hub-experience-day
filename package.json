@@ -4,19 +4,21 @@
     "bootstrap": "^5.2.0-beta1",
     "bootstrap-icons": "^1.8.3",
     "browserify": "^17.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "imask": "^6.4.2",
     "jquery-mask-plugin": "^1.14.16",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
     "requirejs": "^2.3.6",
     "sequelize": "^6.20.1"
   },
   "name": "hub-experience-day",
   "version": "1.0.0",
   "main": "Pages/index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anderson-scr/hub-experience-day.git"
@@ -27,6 +29,5 @@
     "url": "https://github.com/anderson-scr/hub-experience-day/issues"
   },
   "homepage": "https://github.com/anderson-scr/hub-experience-day#readme",
-  "description": "Prjeto do backend expday",
-  "devDependencies": {}
+  "description": "Prjeto do backend expday"
 }
