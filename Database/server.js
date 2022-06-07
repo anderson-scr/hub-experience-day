@@ -19,7 +19,6 @@ app.get('/getAll', (request, response) => {
 
   resultado
     .then(data => response.json({ data: data }))
-    
     .catch(erro => console.log(erro))
 })
 

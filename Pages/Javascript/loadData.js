@@ -5,3 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(data => console.log(data))
 })
+
+class Card {
+  constructor(infoCard) {
+    this.palestra = infoCard
+  }
+
+  
+}

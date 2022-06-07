@@ -18,7 +18,7 @@ class DbService {
   async queryTodosCards() {
     try {
       const resultado = await new Promise((resolve, reject) => {
-        const pesquisa = "SELECT * FROM usuario"
+        const pesquisa = "SELECT * FROM palestra"
   
         connection.execute(pesquisa, (err, results) => {
             // Retorna o erro com a query se der alguma coisa
