@@ -1,17 +1,64 @@
 const mysql = require("mysql2")
 const dotenv = require("dotenv")
+let instance = null
 dotenv.config()
 
 const connection = mysql.createConnection({
   host: process.env.HOST,
   user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
-  port: process.env.DB_PORT
+  database: process.env.DATABASE
 })
 
-connection.connect((err) => {
-  if(err) console.log(err.message)
+class DbService {
+  static getDbServiceInstance() {
+    return instance? instance : new DbService()
+  }
 
-  console.log(`Database ${connection.state}`)
-})
+  async queryTodosCards() {
+    try {
+      const resultado = await new Promise((resolve, reject) => {
+        const pesquisa = "SELECT * FROM usuario"
+  
+        connection.execute(pesquisa, (err, results) => {
+            // Retorna o erro com a query se der alguma coisa
+            if(err) reject(new Error(err.message))
+            console.log(results)
+            resolve(results)
+          }
+        )      
+      })
+
+      console.log(`resultado query: ${resultado}`)
+    } 
+    catch(error) {
+
+      console.log(error)
+    }
+  }
+}
+
+
+
+// async function queryTodosCards() {
+//   const pesquisa = "SELECT * FROM usuario"
+
+//   return await connection.execute(pesquisa, (err, results) => {
+//     // Retorna o erro com a query se der alguma coisa
+//     if(err) reject(new Error(err.message))
+//     resolve(JSON.stringify(results)) 
+
+//   })
+// }
+
+
+
+// function teste() {
+//     connection.execute(
+//     'SELECT * FROM usuario',
+//     function(err, results, fields) {
+//       console.log(results); // results contains rows returned by server
+//     }
+//   )
+// }
+
+module.exports = {DbService}

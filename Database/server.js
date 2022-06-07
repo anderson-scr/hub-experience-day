@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
+const dbService = require("./dbService")
 
-const dbServer = require("./dbService")
 
 const cors = require("cors")
 const dotenv = require("dotenv")
@@ -12,17 +12,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 
-// create
-app.post("/insert", (resquest, response) => {
-
-})
-
-
-app.get("/getAll", (request, response) => {
-  response.json({
-    success: true,
-
-  })
+app.get('/getAll', (request, response) => {
+  console.log("Ta rodando aqui?")
+  const dbzin = new dbService.DbService()  
 })
 
 
