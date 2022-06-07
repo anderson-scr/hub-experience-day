@@ -292,13 +292,14 @@
   align-items: center;
 }
 #apoiador01 > img {
-  transform: scale(.5);
+  transform: scale(.45);
 }
 #apoiador02 > img {
-  transform: scale(.2);
+  transform: scale(.17);
 }
 .apoiador {
-  width: 115px;
+  min-width: 115px;
+  max-width: 115px;
   height: 115px;
   border: 3px solid var(--main-bg-color);
   border-radius: 50%;
