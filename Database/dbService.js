@@ -1,6 +1,5 @@
 const mysql = require("mysql2")
 const dotenv = require("dotenv")
-const { response } = require("express")
 let instance = null
 dotenv.config()
 
@@ -23,7 +22,6 @@ class DbService {
         connection.execute(pesquisa, (err, results) => {
             // Retorna o erro com a query se der alguma coisa
             if(err) reject(new Error(err.message))
-            console.log(`ta vindo de dentro da query principal: ${JSON.stringify(results)}`)
             resolve(results)
           }
         )      

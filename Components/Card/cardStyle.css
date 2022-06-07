@@ -158,6 +158,8 @@
   color: var(--white-1);
   text-align: center;
   margin-top: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 .card-back > figure {
   display: flex;
@@ -175,7 +177,7 @@
   overflow: hidden;
   line-height: 25px;
   width: 90%;
-  height: 150px;
+  height: 105px;
   margin: 0;
 }
 /* O atributo dos 3 pontos nao quis funcionar, infelizmente. */

@@ -1,22 +1,56 @@
-class Card {
-  constructor(infoPalestra) {
-    this.palestra = infoPalestra
+`<div class="flip-card-container" style="--hue: 220">
+  <div class="flip-card">
+    <div class="card-front">
+      
+      <figure id="figure2">
+        <img id="foto_palestrante">
+        <h2>${this.palestra["nome_palestrante"]}</h2>
+        <h3>CEO da Tesla E SpaceX</h3>
+      </figure>
 
-    // id_palestra
-    // nome_sala
-    // andar_sala
-    // nome_palestrante
-    // sub_info_palestrante
-    // instagram_palestrante
-    // linkedin_palestrante
-    // img_palestrante
-    // titulo_palestra
-    // descricao_palestra
-    // hora_palestra
-    // data_palestra
-  }
-  
+      <figure id="titulo_palestra">
+        <h1>Criação de Empresas do zero</h1>
+        <div id="containnerDataHora">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+            <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+          </svg>
+          <legend id="legendaDataHora"></legend>
+        </div>
+      </figure>
+      <img src="../../Assets/Imgs/tia2.jpeg" alt="Foto do palestrante" id="foto">
+    </div>
 
+    <div class="card-back">
+      <figure>
+        <div class="img-bg"></div>
+        <h2>Elon Musk</h2>
+        
+        <p id="descricaoPalestra">Saiba como criar sua própria empresa do zero sem precisar de experiêcia,como atrair insvestidores,como pesquisar o que o mercado exige,qual produto as pessoas nescessitam.</p>
+        <legend id="tresPontos">...</legend>
+        
+        <p id="sala">Vagas</p>
 
+        <div id="containnerSocialCard">
+          <img src="../../Assets/Svgs/people.svg" alt="Icone instragram">
+          <p id="vagas">08/15</p>
+        </div>
+      </figure>
 
-}
+      <button id="inscricao" type="button" onclick="openModal()">Inscreva-se</button>
+
+      <div class="design-container">
+        <span class="design design--1"></span>
+        <span class="design design--2"></span>
+        <span class="design design--3"></span>
+        <span class="design design--4"></span>
+        <span class="design design--5"></span>
+        <span class="design design--6"></span>
+        <span class="design design--7"></span>
+        <span class="design design--8"></span>
+      </div>
+      
+    </div>
+
+  </div>
+</div>`
