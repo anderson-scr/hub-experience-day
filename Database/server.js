@@ -31,8 +31,21 @@ app.get('/getPalestra/:idPesquisa', (request, response) => {
   const resultado = classeBanco.queryPalestra(idPesquisa)
 
   resultado
-  .then(data => response.json({ data: data }))
-  .catch(erro => console.log(erro))
+    .then(data => response.json({ data: data }))
+    .catch(erro => console.log(erro))
+})
+
+
+app.post('/insert', (request, response) => {
+
+  const classeBanco = new dbService.DbService()
+  const resultado = classeBanco.insertUsuario(request.body)
+
+
+  resultado
+    .then(classeBanco.vinculaPalestraUsuario([request.body["id_palestra"], request.body["iptCpf"]]))
+    .then(data => response.json({ data: data }))
+    .catch(erro => console.log(erro))
 })
 
 

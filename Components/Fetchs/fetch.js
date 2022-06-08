@@ -32,20 +32,8 @@ const fetchHeader = new Promise((resolve) => {
   })
   .then(data => {
     document.querySelector("#campoDo3D").innerHTML = data
+    resolve()
   })
-
-
-
-    // Fetch do MODAL
-    fetch("../Components/Modal/modal.html")
-    .then( response => {
-      return response.text()
-    })
-    .then(data => {
-      document.querySelector("#containnerModal").innerHTML = data
-  
-      resolve()
-    })
 })
 
 

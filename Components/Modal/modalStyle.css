@@ -9,9 +9,9 @@ form p{
   flex-grow: 1;
 }
 .modal{
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .75);
   position: fixed;
-  display: none;
+  display: block;
 }
 #gradient {
   width: 50%;
@@ -37,8 +37,8 @@ form p{
   border-radius: 30px;
   overflow-y: scroll;
   position: relative;
-  width: 99%;
-  height: 99%;
+  width: 99.2%;
+  height: 99.2%;
 }
 .modal_content::-webkit-scrollbar {
   width: 15px;

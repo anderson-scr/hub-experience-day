@@ -14,12 +14,6 @@ function createCard(infoCard) {
 }
 
 
-function openModal(evt) {
-  const idPalestra = evt.target.className
-  console.log(idPalestra)
-}
-
-
 class Card {
   constructor(infoCard) {
     this.infoCard = infoCard

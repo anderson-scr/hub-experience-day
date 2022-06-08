@@ -55,30 +55,54 @@ class DbService {
       console.log(error)
     }
   }
+
+
+
+  async insertUsuario(idPalestra) {
+    try {
+      const resultado = await new Promise((resolve, reject) => {
+        const pesquisa = `INSERT INTO usuario(nome, cpf, data_nascimento, email, sexo, telefone) VALUES 
+                (?, ?, ?, ?, ?, ?)`
+  
+        connection.execute(pesquisa, [idPalestra["iptNome"], idPalestra["iptCpf"], idPalestra["iptNasc"], idPalestra["iptEmail"], idPalestra["selectSexo"], idPalestra["iptTelefone"]], (err, results) => {
+            // Retorna o erro com a query se der alguma coisa
+            if(err) reject(new Error(err.message))
+            console.log(results)
+            resolve(results)
+          }
+        )      
+      })
+      return resultado
+    } 
+    catch(error) {
+
+      console.log(error)
+    }
+  }
+
+
+
+  async vinculaPalestraUsuario(idPalestra) {
+    try {
+      const resultado = await new Promise((resolve, reject) => {
+        const pesquisa = `INSERT INTO inscricao VALUES 
+                (?, ?)`
+  
+        connection.execute(pesquisa, [idPalestra[0], idPalestra[1]], (err, results) => {
+            // Retorna o erro com a query se der alguma coisa
+            if(err) reject(new Error(err.message))
+            console.log(results)
+            resolve(results)
+          }
+        )      
+      })
+      return resultado
+    } 
+    catch(error) {
+
+      console.log(error)
+    }
+  }
 }
-
-
-
-// async function queryTodosCards() {
-//   const pesquisa = "SELECT * FROM usuario"
-
-//   return await connection.execute(pesquisa, (err, results) => {
-//     // Retorna o erro com a query se der alguma coisa
-//     if(err) reject(new Error(err.message))
-//     resolve(JSON.stringify(results)) 
-
-//   })
-// }
-
-
-
-// function teste() {
-//     connection.execute(
-//     'SELECT * FROM usuario',
-//     function(err, results, fields) {
-//       console.log(results); // results contains rows returned by server
-//     }
-//   )
-// }
 
 module.exports = {DbService}
