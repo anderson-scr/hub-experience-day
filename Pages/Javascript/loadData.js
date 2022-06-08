@@ -7,15 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function createCard(infoCard) {
-  console.log(infoCard)
+  // console.log(infoCard)
   for (let card of infoCard["data"]) {
     new Card(card)  
   }
 }
 
 
+function openModal(evt) {
+  const idPalestra = evt.target.className
+  console.log(idPalestra)
+}
+
+
 class Card {
   constructor(infoCard) {
+    this.infoCard = infoCard
     this.card = `<div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -54,7 +61,7 @@ class Card {
                         </div>
                       </figure>
 
-                      <button id="inscricao" type="button" onclick="openModal()">Inscreva-se</button>
+                      <button id="inscricao" type="button" class="${infoCard["id_palestra"]}" onclick='openModal(event)'>Inscreva-se</button>
 
                       <div class="design-container">
                         <span class="design design--1"></span>

@@ -33,6 +33,28 @@ class DbService {
       console.log(error)
     }
   }
+
+
+  async queryPalestra(idPalestra) {
+    try {
+      const resultado = await new Promise((resolve, reject) => {
+        const pesquisa = "SELECT * FROM palestra WHERE id_palestra = ?"
+  
+        connection.execute(pesquisa, [idPalestra], (err, results) => {
+            // Retorna o erro com a query se der alguma coisa
+            if(err) reject(new Error(err.message))
+            console.log(results)
+            resolve(results)
+          }
+        )      
+      })
+      return resultado
+    } 
+    catch(error) {
+
+      console.log(error)
+    }
+  }
 }
 
 

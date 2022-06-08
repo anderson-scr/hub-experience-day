@@ -23,4 +23,17 @@ app.get('/getAll', (request, response) => {
 })
 
 
+
+app.get('/getPalestra/:idPesquisa', (request, response) => {
+  const { idPesquisa } = request.params
+
+  const classeBanco = new dbService.DbService()
+  const resultado = classeBanco.queryPalestra(idPesquisa)
+
+  resultado
+  .then(data => response.json({ data: data }))
+  .catch(erro => console.log(erro))
+})
+
+
 app.listen(process.env.PORT, () => console.log("App is running"))
