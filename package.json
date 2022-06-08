@@ -17,7 +17,6 @@
   },
   "name": "hub-experience-day",
   "version": "1.0.0",
-  "main": "Pages/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
