@@ -15,7 +15,9 @@ function createModal(cardi) {
 class Modal {
   constructor(infoCard) {
     this.infoCard = infoCard
+    this.trocarPalestra = `Você já se inscreveu na palestra ${this.infoCard["titulo_palestra"]}.<br> Deseja alterar sua inscrição?`
     this.modalHtml = `<div id="div-modal" class="modal">
+    <section id="containnerModalUnico"></section>
     <div id="gradient">
       <div class="modal_content">
         <div class="containnerSetinha" id="containnerSetinhaCima">
@@ -190,6 +192,33 @@ class Modal {
     </div>
   </div>`
 
+  this.segundoModal = `
+                        <div class="modal_aviso" id="aviso">
+                          <div class="modal_content_aviso">
+                              
+                            <!-- cabeça do aviso -->
+                            <div class="head_modal_aviso">
+                              <h1 class="atencao">!ATENÇÃ0!</h1>
+                            </div>
+
+                            <!-- corpo do aviso -->
+                            <div class="body_modal_aviso">
+                              <p>Você já se inscreveu na palestra Nome da palestra.<br>Deseja alterar sua inscrição?</p>
+                            </div>
+
+
+                            <!-- rodape do aviso/botoes -->
+                            <div class="footer_modal_aviso">
+                              <div id="nao_div">
+                                <button class="btn_nao" id="nao" onclick="closeaviso('modal_aviso')">Não</button>
+                              </div>
+                              <div id="sim_div">
+                                <button class="btn_sim" id="sim">Sim</button>                       
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>`
   this.abrir()
   }
 
@@ -266,22 +295,6 @@ class Modal {
   
     modal.innerHTML = '';
     document.querySelector("body").style.overflow = "visible"
-  }
-
-
-  verificaEntrada2() {
-    evt.preventDefault()
-    const respostas = {
-      iptNome: document.querySelector("#iptNome").value,
-      iptCpf: document.querySelector("#iptCpf").value,
-      iptNasc: document.querySelector("#iptNasc").value,
-      iptEmail: document.querySelector("#iptEmail").value,
-      selectSexo: document.querySelector("#selectSexo").value,
-      iptTelefone: document.querySelector("#iptTelefone").value,
-      id_palestra: this.infoCard["id_palestra"]
-    }
-
-
   }
 
   verificaEntrada(evt) {
@@ -382,6 +395,9 @@ class Modal {
         })
       })
 
+      const containnerModalzinho = document.querySelector("#containnerModalUnico")
+      containnerModalzinho.innerHTML = this.segundoModal
+      console.log(containnerModalzinho)
     } else {
       console.log("Nao tenho cadastro")
       fetch("http://localhost:5005/insert", {
@@ -391,7 +407,11 @@ class Modal {
         method: 'POST',
         body: JSON.stringify(todasRespostas)
       })
-    }
+        
+      this.trocarPalestra = `Voce esta cadastrado(a) em ${this.infoCard["titulo_palestra"]}.`
+        const containnerModalzinho = document.querySelector("#containnerModalUnico")
+        containnerModalzinho.innerHTML = this.segundoModal
+      }
   }
 
 

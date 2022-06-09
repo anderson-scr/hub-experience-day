@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avisoStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scriptAviso.js"></script>
+    <button onclick="abrirAviso('modal_aviso')">Abrir</button>
+
+    <div class="modal_aviso" id="aviso">
+        <div class="modal_content_aviso">
+            
+            <!-- cabeça do aviso -->
+            <div class="head_modal_aviso">
+                <h1 class="atencao">!ATENÇÃ0!</h1>
+            </div>
+
+            <!-- corpo do aviso -->
+            <div class="body_modal_aviso">
+                <p>Você já se inscreveu na palestra Nome da palestra.<br>Deseja alterar sua inscrição?</p>
+            </div>
+
+
+            <!-- rodape do aviso/botoes -->
+            <div class="footer_modal_aviso">
+                <div id="nao_div">
+                    <button class="btn_nao" id="nao" onclick="closeaviso('modal_aviso')">Não</button>
+                </div>
+                <div id="sim_div">
+                    <button class="btn_sim" id="sim">Sim</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

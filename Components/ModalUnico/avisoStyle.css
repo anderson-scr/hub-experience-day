@@ -1,0 +1,144 @@
+/* fundo escuro */
+.modal_aviso{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+
+}
+
+/* modal de aviso */
+.modal_content_aviso{
+    background-color: #FCFCFC;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 0;
+    border-radius: 30px;
+    border: 2px solid grey;
+}
+
+
+/* head do modal */
+.head_modal_aviso{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.atencao{
+    font-family: var(--textFont);
+    font-weight: normal;
+}
+/* body modal */
+.body_modal_aviso{
+    display: flex;
+    justify-content: center;
+    font-family: var(--textFont);
+}
+
+
+
+/* footer do modal */
+.footer_modal_aviso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* espaçamento */
+#nao_div{
+    width: 50%;
+}
+#enviar_div{
+    width: 27%;  
+}
+.head_modal_aviso{
+    padding: 20px;
+}
+.body_modal_aviso{
+    padding: 20px;
+}
+.footer_modal_aviso{
+    padding: 20px;
+}
+
+
+/* BOTAO nao ANIMAÇÃO */
+.btn_nao{
+    height: 30px;
+    width: 120px;
+    border: 3px solid red;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.btn_nao::before, .btn_nao::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: 1s ease;
+}
+.btn_nao::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+.btn_nao::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+.btn_nao:hover::before, .btn_nao:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+.btn_nao:hover{
+    background-color: white;
+}
+
+
+/* botao Sim animação */
+.btn_sim{
+    height: 30px;
+    width: 120px;
+    border: 3px solid red;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+.btn_sim::before, .btn_sim::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: 1s ease;
+}
+.btn_sim::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+.btn_sim::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+.btn_sim:hover::before, .btn_sim:hover::after{
+
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+.btn_sim:hover{
+    background-color: red;
+    color: white;
+}

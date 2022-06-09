@@ -18,7 +18,7 @@
 
   position: relative;
   transform-style: preserve-3d;
-  transition: .6s .1s;  
+  transition: .6s .1s;
 }
 
 /* hover and focus-within states */
@@ -120,7 +120,7 @@
 
 .card-front h1 {
   font-size: 20px;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #0C4D85;
 }
 .card-front h2{
   font-size: 22px;
@@ -130,7 +130,7 @@
   position: absolute;
   bottom: 50px;
   color: var(--white-1);
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #0C4D85;
 }
 .card-front h3 {
   position: absolute;
@@ -138,7 +138,8 @@
   left: 15px;
   color: var(--white-1);
   font-size: 16px;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #0C4D85;
+
 }
 #containnerDataHora {
   display: flex;
@@ -156,7 +157,9 @@
 }
 #legendaDataHora {
   font-size: 18px;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #0C4D85;
+  -webkit-text-stroke: 1px #0C4D85;
+
 }
 /* Parte da frente do card */
 

@@ -12,7 +12,7 @@ function createCard(infoCard) {
     fetch("http://localhost:5005/getQntInscricao/" + card["id_palestra"])
       .then(response => response.json())
       .then(data => {
-        card["qntInscrito"] = data
+        card["qntInscrito"] = data["data"][0]["count(*)"]
         new Card(card)
       })  
   }
@@ -58,7 +58,7 @@ class Card {
 
                         <div id="containnerSocialCard">
                           <img src="../../Assets/Svgs/people.svg" alt="Icone vagas">
-                          <p id="vagas">08/${infoCard["limite_pessoa"]}</p>
+                          <p id="vagas">${infoCard["qntInscrito"]}/${infoCard["limite_pessoa"]}</p>
                         </div>
                       </figure>
 
@@ -90,8 +90,13 @@ class Card {
   }
   // 3 21 23
 
+  verificaDisponibilidade() {
+    if(this.infoCard["qntInscrito"] >= this.infoCard["limite_pessoa"]) {
+      document.querySelector("#inscricao").disabled = true
+    }
+  }
+
   constroiCard() {
-    console.log(this.infoCard)
     const containnerCardi = document.querySelector(".containnerDeCards") 
     containnerCardi.innerHTML += this.card
   }
@@ -99,7 +104,7 @@ class Card {
   fadeImage() {
     const imgCard = document.querySelector(`#fade${this.infoCard["id_palestra"]}`)
 
-    imgCard.style.animation = `fadeImage${this.infoCard["id_palestra"]} 13s infinite`
+    imgCard.style.animation = `fadeImage${this.infoCard["id_palestra"]} 7s infinite`
   }
 
   setImageBg() {

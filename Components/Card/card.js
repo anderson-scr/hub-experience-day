@@ -60,7 +60,6 @@ export default class Card {
     this.constroiCard()
   }
 
-
   constroiCard() {
     const containnerCardi = document.querySelector(".containnerDeCards") 
     containnerCardi.innerHTML += this.card
