@@ -316,11 +316,11 @@
 
 .flip-card-container h1{
   font-weight: bold;
-  font-size: 16;
+  font-size: 18px;
   border-bottom: 2px solid white;
   margin: auto;
   text-align: center;
-  align-items: center;
+  text-align: left;
   width: 80%;
 }
 

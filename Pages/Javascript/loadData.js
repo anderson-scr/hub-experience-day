@@ -73,8 +73,10 @@ class Card {
                   </div>
                 </div>`
 
+    
     this.constroiCard()
   }
+  // 3
 
   constroiCard() {
     const containnerCardi = document.querySelector(".containnerDeCards") 

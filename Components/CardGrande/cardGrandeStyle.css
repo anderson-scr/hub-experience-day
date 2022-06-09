@@ -1,0 +1,207 @@
+:root {
+    --main-bg-color: #0C4D85;
+    --background-blue: #0C4D85;
+    --white: #FCFCFC;
+    --blue: #42A7FF;
+    --hover_botao_enviar: hsl(207, 90%, 40%);
+    --orange: #f7941e;
+    --ligth-orange: #f7a94a;
+    --quadradinhos: #0c4d8531;
+    --hubFont: 'Press Start 2P', cursive;
+    --textFont: 'Fira Code',  monospace;
+    
+    /* --background-blue: #0C4D85; */
+    /* --laranjado:  #f7941e ; */
+}
+
+.approach-area {
+    position: relative;
+}
+
+.approach-area .approach-shape {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.approach-content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: var(--blue);
+}
+
+.p{
+    text-align: center;
+}
+
+.approach-content ul {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.col-lg-6{
+margin: auto;
+}
+
+
+.approach-content ul li {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    font-size: 14;
+    position: relative;
+    padding-left: 100px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    list-style: none;
+    width: 320px;
+    height: 140px;
+}
+
+.approach-content ul li p{
+padding: 5px;
+}
+
+.approach-content ul li p:hover{
+color: white;
+}
+
+.approach-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.approach-content ul li i {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: var(--ligth-orange);
+}
+
+.approach-content ul li h3 {
+    margin-bottom: 12px;
+    color: var(--blue);
+}
+
+.approach-content li:hover h3{
+    color: white;
+}
+
+.approach-content ul li:hover {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    background-color: var(--blue);
+}
+
+.approach-content li{
+    text-align: center;
+}
+
+.approach-content ul{
+    justify-content: right;    
+}
+
+.approach-content ul li:hover{
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.approach-img{
+    width: 230px;
+    height: 350px; 
+    /* margin-top: 50px;    */
+}
+
+.name-man-div{
+    margin-top: -35px;
+    margin-left: 14px;
+}
+
+.name-man-div span{
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#inscricao {
+    margin-top: 40px;
+    align-items: inherit;
+    font-weight: bold;
+    color: var(--orange);
+    letter-spacing: 2px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    background: transparent;
+    transition-delay: .01s;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    margin-left: 58px;
+}
+
+#inscricao::before, #inscricao::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: .5s ease;
+}
+#inscricao::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+#inscricao::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+#inscricao:hover::before, #inscricao:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+#inscricao:hover{
+    background-color: white;
+}
+
+.align-items-center{
+    align-items: center !important;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.p img{
+    width: 20px;
+    height: 20px;
+}
+
+
