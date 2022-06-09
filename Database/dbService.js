@@ -14,6 +14,7 @@ class DbService {
     return instance? instance : new DbService()
   }
 
+
   async queryTodosCards() {
     try {
       const resultado = await new Promise((resolve, reject) => {
@@ -56,8 +57,6 @@ class DbService {
     }
   }
 
-
-
   async insertUsuario(idPalestra) {
     try {
       const resultado = await new Promise((resolve, reject) => {
@@ -75,7 +74,6 @@ class DbService {
       return resultado
     } 
     catch(error) {
-
       console.log(error)
     }
   }

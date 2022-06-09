@@ -8,24 +8,8 @@ function openModal(evt) {
 }
 
 function createModal(cardi) {
-  // console.log(cardi["data"]["0"])
-
   new Modal(cardi["data"]["0"])
 }
-
-// andar_sala: "6º andar"
-// data_palestra: "2022-06-22T04:00:00.000Z"
-// descricao_palestra: "06Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\r\nmolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum\r\nnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium\r\noptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis\r\nobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam\r\nnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,\r\ntenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,\r\nquia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos \r\nsapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam\r\nrecusandae alias error harum maxime adipisci amet laborum. Perspiciatis \r\nminima nesciunt dolorem!"
-// hora_palestra: "09:30:00"
-// id_palestra: 6
-// img_palestrante: "./Assets/Imgs/Palestrantes/pessoa06.jpg"
-// instagram_palestrante: "https://www.instagram.com/"
-// limite_pessoa: 5
-// linkedin_palestrante: "https://www.linkedin.com/"
-// nome_palestrante: "Nome do Palestrante 6"
-// nome_sala: "nome Sala 6"
-// sub_info_palestrante: "Informacao sobre palestra 6"
-// titulo_palestra: "Titulo da Palestra 6"
 
 
 class Modal {
@@ -53,9 +37,9 @@ class Modal {
           <div class="containnerInformacoes">
             <h3>${this.infoCard["titulo_palestra"]}</h3>
             <div class="containnerSalaAndar">
-              <p>${this.infoCard["nome_sala"]}</p>
-              <p>- ${this.infoCard["andar_sala"]}</p>
+              <p><strong>${this.infoCard["nome_sala"]}</strong></p>
             </div>
+              <p><strong>${this.infoCard["andar_sala"]}</strong></p>
             <div id="paragrafo">
               ${this.infoCard["descricao_palestra"]}
             </div>
@@ -76,6 +60,7 @@ class Modal {
             <div class="wrapper">
               <div class="input-data">
                 <input type="text" name="nome" id="iptNome" required>
+                <legend class="alertaPreencher" id="alertaPreencheriptNome">Preencha o campo corretamente.</legend>
                 <label>Nome</label>
               </div>
             </div>
@@ -90,7 +75,8 @@ class Modal {
           <div class="espaco">
             <div class="wrapper">
               <div class="input-data">
-                <input type="text" name="cpf" id="iptCpf" required>
+                <input type="text" name="cpf" id="iptCpf" maxlength="14" required>
+                <legend class="alertaPreencher" id="alertaPreencheriptCpf">Preencha o campo corretamente.</legend>
                 <label>CPF</label>
               </div>
             </div>
@@ -102,7 +88,8 @@ class Modal {
           <div class="espaco">
             <div class="wrapper">
               <div class="input-data">
-                <input type="text" name="data_nasc" id="iptNasc" required>
+                <input type="text" name="data_nasc" id="iptNasc" maxlength="10" required>
+                <legend class="alertaPreencher" id="alertaPreencheriptNasc">Preencha o campo corretamente.</legend>
                 <label>Data de Nascimento</label>
               </div>
             </div>
@@ -115,6 +102,7 @@ class Modal {
             <div class="wrapper">
               <div class="input-data">
                 <input type="email" id="iptEmail" required>
+                <legend class="alertaPreencher" id="alertaPreencheriptEmail">Preencha o campo corretamente.</legend>
                 <label>E-mail</label>
               </div>
             </div>
@@ -131,6 +119,7 @@ class Modal {
                 <option value="Feminino">Feminino</option>
                 <option value="Outro">Outro</option>
               </select>
+              <legend class="alertaPreencher" id="alertaPreencherselectSexo">Preencha o campo corretamente.</legend>
             </div>
           </div>
   
@@ -140,7 +129,8 @@ class Modal {
           <div class="espaco">
             <div class="wrapper">
               <div class="input-data">
-                <input type="text" name="telefone" id="iptTelefone" required>
+                <input type="text" name="telefone" id="iptTelefone" maxlength="15" required>
+                <legend class="alertaPreencher" id="alertaPreencheriptTelefone">Preencha o campo corretamente.</legend>
                 <label>Telefone</label>
               </div>
             </div>
@@ -161,6 +151,7 @@ class Modal {
                 </div>
               </label>
             </div>
+            <legend class="alertaPreencher" id="alertaPreencherCheck">Preencha o campo corretamente.</legend>
             </div>
               <div class="espaco_menor">
                 <div class="check_box">
@@ -203,6 +194,9 @@ class Modal {
   }
 
 
+//   <input onkeypress="return mask(event, this, '(##) ####-####')" maxlength="14" placeholder=" (DDD) 0000-0000">
+// <input onkeypress="return mask(event, this, '##/##/####')" maxlength="10" placeholder="dd/mm/aaaa">
+// <input onkeypress="return mask(event, this, '###.###.###-##')" maxlength="14" placeholder="000.000.000-00"></input>
 
 
   abrir() {
@@ -213,14 +207,54 @@ class Modal {
     modal.innerHTML = this.modalHtml;
     document.querySelector("body").style.overflow = "hidden"
     
-    
     this.mostraEscondeSetinha()
     const btnEnviar = document.querySelector("#enviar")
     const btnCancelar = document.querySelector("#cancelar")
+    const iptNasc = document.querySelector("#iptNasc")
+    const iptCpf = document.querySelector("#iptCpf")
+    const iptTelefone = document.querySelector("#iptTelefone")
+
+    
     btnEnviar.addEventListener("click", evt => this.verificaEntrada(evt))
     btnCancelar.addEventListener("click", evt => this.closeModal(evt))
+    iptNasc.addEventListener("keypress", evt => this.mask(evt, iptNasc, '##/##/####'))
+    iptCpf.addEventListener("keypress", evt => this.mask(evt, iptCpf, '###.###.###-##'))
+    iptTelefone.addEventListener("keypress", evt => this.mask(evt, iptTelefone, '(##) #####-####'))
   }
 
+
+
+
+  mask(e, id, mask){
+    let tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla>47 && tecla<58)){
+        this.mascara(id, mask);
+        return true;
+    } 
+    else{
+        if (tecla==8 || tecla==0){
+            mascara(id, mask);
+            return true;
+        } 
+        else  return false;
+    }
+  }
+  mascara(id, mask){
+      var i = id.value.length;
+      var carac = mask.substring(i, i+1);
+      var prox_char = mask.substring(i+1, i+2);
+      if(i == 0 && carac != '#'){
+          insereCaracter(id, carac);
+          if(prox_char != '#')insereCaracter(id, prox_char);
+      }
+      else if(carac != '#'){
+          insereCaracter(id, carac);
+          if(prox_char != '#')insereCaracter(id, prox_char);
+      }
+      function insereCaracter(id, char){
+          id.value += char;
+      }
+  }
 
 
 
@@ -235,7 +269,20 @@ class Modal {
   }
 
 
+  verificaEntrada2() {
+    evt.preventDefault()
+    const respostas = {
+      iptNome: document.querySelector("#iptNome").value,
+      iptCpf: document.querySelector("#iptCpf").value,
+      iptNasc: document.querySelector("#iptNasc").value,
+      iptEmail: document.querySelector("#iptEmail").value,
+      selectSexo: document.querySelector("#selectSexo").value,
+      iptTelefone: document.querySelector("#iptTelefone").value,
+      id_palestra: this.infoCard["id_palestra"]
+    }
 
+
+  }
 
   verificaEntrada(evt) {
     evt.preventDefault()
@@ -248,11 +295,65 @@ class Modal {
       iptTelefone: document.querySelector("#iptTelefone").value,
       id_palestra: this.infoCard["id_palestra"]
     }
+    const legends = [document.querySelector("#alertaPreencheriptNome"), 
+                      document.querySelector("#alertaPreencheriptCpf"), 
+                      document.querySelector("#alertaPreencheriptNasc"),
+                      document.querySelector("#alertaPreencheriptEmail"),
+                      document.querySelector("#alertaPreencherselectSexo"),
+                      document.querySelector("#alertaPreencheriptTelefone"),
+                      document.querySelector("#alertaPreencherCheck") ]
     
-    const checks = {
-      check1: document.querySelector("#check1").checked,
-      check2: document.querySelector("#check2").checked
+    legends.forEach(valor => valor.style.visibility  = "hidden")
+
+    
+    console.log(respostas)
+    if(respostas["iptNome"] === '') {
+      document.querySelector("#alertaPreencheriptNome").style.visibility = "visible"
+      return
     }
+
+    let letraCPF = false
+    for(let n of respostas["iptCpf"]) {
+      if(parseInt(n) == NaN && n !== "." && n !== "-") {
+        letraCPF = true
+      }
+    }
+    if(respostas["iptCpf"] == '' || letraCPF || respostas["iptCpf"].length < 14 ) {
+      document.querySelector("#alertaPreencheriptCpf").style.visibility = "visible"
+      return
+    }
+
+
+
+    let letraNasc = false
+    for(let n of respostas["iptNasc"]) {
+      if(parseInt(n) == NaN && n !== "/") {
+        letraNasc = true
+      }
+    }
+    if(respostas["iptNasc"] == '' || letraNasc || respostas["iptNasc"].length < 10 ) {
+      document.querySelector("#alertaPreencheriptNasc").style.visibility = "visible"
+      return
+    }
+
+
+
+    if(respostas["iptEmail"] == '') {
+      document.querySelector("#alertaPreencheriptEmail").style.visibility = "visible"
+      return
+    }
+    if(respostas["selectSexo"] == 'Sexo') {
+      document.querySelector("#alertaPreencherselectSexo").style.visibility = "visible"
+      return
+    }
+
+    if (!document.querySelector("#check1").checked) {
+      document.querySelector("#alertaPreencherCheck").style.visibility = "visible"
+      return
+    }
+
+
+
     console.log(respostas)
     fetch("http://localhost:5005/insert", {
       headers: {

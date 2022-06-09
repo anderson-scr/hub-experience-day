@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Quando o site carrega")
+
   fetch("http://localhost:5005/getAll")
 
     .then(response => response.json())
@@ -29,14 +29,16 @@ class Card {
                       <figure id="titulo_palestra">
                         <h1>${infoCard["titulo_palestra"]}</h1>
                         <div id="containnerDataHora">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
                             <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
                           </svg>
-                          <legend id="legendaDataHora">${this.trataData(infoCard["data_palestra"])}</legend>
+                          <legend id="legendaDataHora">22/06 - 19:00</legend> -->
                         </div>
                       </figure>
-                      <img src="../.${infoCard["img_palestrante"]}" alt="Foto do palestrante" id="foto">
+                      <div class="fotoFade" id="fade${this.infoCard["id_palestra"]}"> </div>
+
+                      <img src=".${infoCard["img_palestrante"]}" alt="Foto do palestrante" class="foto h${this.infoCard["id_palestra"]}">
                     </div>
 
                     <div class="card-back">
@@ -74,9 +76,14 @@ class Card {
                 </div>`
 
     
-    this.constroiCard()
+    if(this.infoCard["id_palestra"] !== 1) this.constroiCard()
+
+    if(this.infoCard["id_palestra"] == 3 || this.infoCard["id_palestra"] == 21 || this.infoCard["id_palestra"] == 23 ) {
+      this.fadeImage()
+      this.setImageBg()
+    }
   }
-  // 3
+  // 3 21 23
 
   constroiCard() {
     const containnerCardi = document.querySelector(".containnerDeCards") 
@@ -86,5 +93,19 @@ class Card {
   trataData(data) {
     const novaData = data.substr(5, 5)
     return novaData
+  }
+
+  fadeImage() {
+    const imgCard = document.querySelector(`#fade${this.infoCard["id_palestra"]}`)
+
+    imgCard.style.animation = `fadeImage${this.infoCard["id_palestra"]} 13s infinite`
+  }
+
+  setImageBg() {
+    const img = document.querySelector(`#fade${this.infoCard["id_palestra"]}`)
+    const hide = document.querySelector(`.h${this.infoCard["id_palestra"]}`)
+    hide.style.display = "none";
+
+    img.classList.add(`img${this.infoCard["id_palestra"]}`)
   }
 }
