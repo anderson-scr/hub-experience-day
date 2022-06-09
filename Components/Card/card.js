@@ -1,4 +1,5 @@
 export default class Card {
+  
   constructor(infoCard) {
     this.card = `<div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">

@@ -9,7 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function createCard(infoCard) {
   // console.log(infoCard)
   for (let card of infoCard["data"]) {
-    new Card(card)  
+    fetch("http://localhost:5005/getQntInscricao/" + card["id_palestra"])
+      .then(response => response.json())
+      .then(data => {
+        card["qntInscrito"] = data
+        new Card(card)
+      })  
   }
 }
 
@@ -86,13 +91,9 @@ class Card {
   // 3 21 23
 
   constroiCard() {
+    console.log(this.infoCard)
     const containnerCardi = document.querySelector(".containnerDeCards") 
     containnerCardi.innerHTML += this.card
-  }
-
-  trataData(data) {
-    const novaData = data.substr(5, 5)
-    return novaData
   }
 
   fadeImage() {

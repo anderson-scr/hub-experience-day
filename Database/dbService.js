@@ -14,7 +14,6 @@ class DbService {
     return instance? instance : new DbService()
   }
 
-
   async queryTodosCards() {
     try {
       const resultado = await new Promise((resolve, reject) => {
@@ -57,6 +56,27 @@ class DbService {
     }
   }
 
+
+
+  async queryQntInscricao(idPalestra) {
+    try {
+      const resultado = await new Promise((resolve, reject) => {
+        const pesquisa = "SELECT count(*) FROM inscricao WHERE fk_palestra = ?"
+  
+        connection.execute(pesquisa, [idPalestra], (err, results) => {
+            // Retorna o erro com a query se der alguma coisa
+            if(err) reject(new Error(err.message))
+            resolve(results)
+          }
+        )      
+      })
+      return resultado
+    } 
+    catch(error) {
+
+      console.log(error)
+    }
+  }
 
   async queryInscricao(idPalestra) {
     try {

@@ -44,6 +44,17 @@ app.get('/getPalestra/:idPesquisa', (request, response) => {
     .catch(erro => console.log(erro))
 })
 
+app.get('/getQntInscricao/:idPesquisa', (request, response) => {
+  const { idPesquisa } = request.params
+
+  const classeBanco = new dbService.DbService()
+  const resultado = classeBanco.queryQntInscricao(idPesquisa)
+
+  resultado
+    .then(data => response.json({ data: data }))
+    .catch(erro => console.log(erro))
+})
+
 
 
 
