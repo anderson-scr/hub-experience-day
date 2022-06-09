@@ -293,6 +293,8 @@ class Modal {
       iptEmail: document.querySelector("#iptEmail").value,
       selectSexo: document.querySelector("#selectSexo").value,
       iptTelefone: document.querySelector("#iptTelefone").value,
+      checkUsoInfo: document.querySelector("#check1").value,
+      checkRecebeEmail: document.querySelector("#check1").value,
       id_palestra: this.infoCard["id_palestra"]
     }
     const legends = [document.querySelector("#alertaPreencheriptNome"), 
@@ -347,26 +349,50 @@ class Modal {
       return
     }
 
-    if (!document.querySelector("#check1").checked) {
+    if (!document.querySelector("#check1").value) {
       document.querySelector("#alertaPreencherCheck").style.visibility = "visible"
       return
     }
 
 
 
-    console.log(respostas)
-    fetch("http://localhost:5005/insert", {
-      headers: {
-        'Content-type': 'application/json'
-      },
-      method: 'POST',
-      body: JSON.stringify(respostas)
-    })
+    fetch("http://localhost:5005/getInscricao/" + respostas["iptCpf"])
+      .then(response => response.json())
+      .then(data => { this.updataOuInsere(data, respostas["iptCpf"], respostas["id_palestra"], respostas)})
+      
+      
+     
+
     // .then(response => response.json())
     // .then(data => console.log(data))
 
   }
+  updataOuInsere(info, cpf, palestra, todasRespostas) {
 
+    if(info["data"].length > 0) {
+      console.log("Tenho cadastro")
+      fetch("http://localhost:5005/update", {
+        method: 'PATCH',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          cpf: cpf,
+          palestra: palestra
+        })
+      })
+
+    } else {
+      console.log("Nao tenho cadastro")
+      fetch("http://localhost:5005/insert", {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        method: 'POST',
+        body: JSON.stringify(todasRespostas)
+      })
+    }
+  }
 
 
   mostraEscondeSetinha() {
